@@ -6,7 +6,8 @@ namespace fau_budgeting
     {
         public TestModule()
         {
-            Get["/"] = _ => "Hello!";
+            Get["/"] = _ => "hi!";
+            Get["/{name}"] = parameters => View["test", parameters.name];
         }
     }
 }
