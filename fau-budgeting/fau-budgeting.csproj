@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\css\style.css" />
+    <Content Include="content\js\test.js" />
     <Content Include="icon.png" />
     <None Include="views\test.sshtml" />
     <Content Include="Web.config" />
