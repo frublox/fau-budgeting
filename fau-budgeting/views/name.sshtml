@@ -2,5 +2,5 @@
 
 @Section['Content']
 	<p>Hello, @Model! ;)</p>
-	<script src="js/test.js"></script>
+	<script src="js/name.js"></script>
 @EndSection
