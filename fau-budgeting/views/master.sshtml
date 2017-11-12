@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p>Hello, @Model! ;)</p>
-	<script src="js/test.js"></script>
+    @Section['Content']
 </body>
 </html>
