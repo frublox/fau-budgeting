@@ -86,9 +86,11 @@
     <None Include="views\master.sshtml" />
     <None Include="views\data.sshtml" />
     <None Include="views\email.sshtml" />
+    <None Include="views\admin.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="EmailModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="views\newmaster.sshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

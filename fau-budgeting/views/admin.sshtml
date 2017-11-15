@@ -1,0 +1,129 @@
+﻿@Master['newmaster.sshtml']
+
+@Section['Title']
+    ASAB - Admin Launch Screen
+@EndSection
+
+@Section['Content']
+    <!-- Page Content -->
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Dashboard</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="container-fluid">
+
+            <!-- Unreviewed Requests Panel-->
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Unreviewed Requests
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="list-group">
+                            @Each.Unreviewed
+                                <a href="budget-request-info.html" class="list-group-item">
+                                    <p>
+                                        @Current.Organization <br> <span class="text-danger"> Status: @Current.Status <br></span>
+                                        <span class="pull-right text-muted small"><em><strong>@Current.Date</strong></em></span>
+                                    </p>
+                                </a>
+                            @EndEach     
+                            
+                            <!-- /.list-group -->
+                            <a href="view-all-submissions.html" class="btn btn-default btn-block">View All Submissions</a>
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.Unreviewed Requests Panel-->
+            <!-- Reviewed requests Panel-->
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Reviewed Requests
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="list-group">
+                            @Each.Reviewed
+                                <a href="budget-request-info.html" class="list-group-item">
+                                    <p>
+                                        @Current.Organization <br> <span class="text-primary"> Status: @Current.Status<br></span>
+                                        <span class="pull-right text-muted small">
+                                            <em><strong>@Current.Date</strong></em>
+                                        </span>
+                                    </p>
+                                </a>
+                            @EndEach
+                            <!-- /.list-group -->
+                            <a href="view-all-reviewed.html" class="btn btn-default btn-block">View All Reviewed Requests</a>
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /. Reviewed Request Panel-->
+            <!-- Approved Request Panel-->
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Approved Requests
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="list-group">
+                            @Each.Accepteds
+                                <a href="budget-request-info.html" class="list-group-item">
+                                    <p>
+                                        @Current.Organization <br> <span class="text-success"> Status: @Current.Status <br></span>
+                                        <span class="pull-right text-muted small">
+                                            <em><strong>@Current.Date</strong></em>
+                                        </span>
+                                    </p>
+                                </a>
+                           @EndEach
+
+                            <!-- /.list-group -->
+                            <a href="view-all-approved.html" class="btn btn-default btn-block">View All Approved Requests</a>
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /. Approved Request Panel-->
+        </div>
+        <!--/.container-fluid -->
+        <h4 style="text-align: center"><a href="javascript:getRes()"></a>Approved Total Budget: $ <input id="total" type="text" placeholder=0 disabled="disabled"></h4>
+    </div>
+    <!-- /#page-wrapper -->
+        </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="../dist/js/budget-total.js"></script>
+@EndSection
