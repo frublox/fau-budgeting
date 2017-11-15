@@ -27,7 +27,7 @@ namespace fau_budgeting
                 var fromAddress = new MailAddress(data.Email);
                 var password = data.Password;
 
-                string toAddress = fromAddress;
+                var toAddress = fromAddress;
 
                 MailMessage message = new MailMessage
                 {
