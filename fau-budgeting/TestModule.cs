@@ -11,10 +11,12 @@ namespace fau_budgeting
             Get["/"] = _ => "hi!";
 
             // Example demonstrating iteration
-            var data = new List<string>();
-            data.Add("green");
-            data.Add("blue");
-            data.Add("purple");
+            var data = new List<string>
+            {
+                "green",
+                "blue",
+                "purple"
+            };
 
             Get["/data"] = _ => View["data", data];
 
