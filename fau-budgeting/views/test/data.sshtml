@@ -1,4 +1,4 @@
-﻿@Master['master.sshtml']
+﻿@Master['test-master.sshtml']
 
 @Section['Content']
     <h1>Data</h1>

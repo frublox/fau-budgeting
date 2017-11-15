@@ -82,10 +82,10 @@
     <Content Include="content\css\style.css" />
     <Content Include="content\js\name.js" />
     <Content Include="icon.png" />
-    <None Include="views\name.sshtml" />
-    <None Include="views\master.sshtml" />
-    <None Include="views\data.sshtml" />
-    <None Include="views\email.sshtml" />
+    <None Include="views\test\name.sshtml" />
+    <None Include="views\test\test-master.sshtml" />
+    <None Include="views\test\data.sshtml" />
+    <None Include="views\test\email.sshtml" />
     <None Include="views\admin.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -98,7 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="views\newmaster.sshtml" />
+    <Content Include="views\master.sshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -18,9 +18,9 @@ namespace fau_budgeting
     {
         public EmailModule()
         {
-            Get["/email"] = _ => View["email"];
+            Get["/test/email"] = _ => View["email"];
 
-            Post["/send-email"] = _ =>
+            Post["/test/send-email"] = _ =>
             {
                 PostData data = this.Bind<PostData>();
 

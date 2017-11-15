@@ -1,8 +1,8 @@
-﻿@Master['master.sshtml']
+﻿@Master['test-master.sshtml']
 
 @Section['Content']
     <p>Enter your email credentials.</p>
-    <form action="/send-email" method="post">
+    <form action="/test/send-email" method="post">
         <div>
             <label for="email">Email:</label>
             <input type="text" name="email" />

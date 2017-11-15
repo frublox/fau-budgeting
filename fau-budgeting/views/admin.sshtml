@@ -1,4 +1,4 @@
-﻿@Master['newmaster.sshtml']
+﻿@Master['master.sshtml']
 
 @Section['Title']
     ASAB - Admin Launch Screen
