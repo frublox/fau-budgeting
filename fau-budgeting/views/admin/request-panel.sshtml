@@ -1,0 +1,26 @@
+﻿<div class="panel-body">
+    <div class="list-group">
+
+        @Each
+        <a href="/budget-request-info?id=@Current.Id" class="list-group-item">
+            <p>
+                @Current.Organization 
+                <br>
+
+                <span class="@Current.Props.Class">
+                    @Current.StatusText
+                </span>
+                <br>
+
+                <span class="pull-right text-muted small">
+                    <em><strong>@Current.Date</strong></em>
+                </span>
+            </p>
+        </a>
+        @EndEach
+
+        <a href="view-all-submissions.html" class="btn btn-default btn-block">
+            View All Submissions
+        </a>
+    </div>
+</div>

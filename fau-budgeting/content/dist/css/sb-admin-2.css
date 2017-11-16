@@ -432,3 +432,24 @@ table.dataTable thead .sorting:after {
     border-left-width: 0;
   }
 }
+
+.status-new {
+    color: blue;
+}
+
+.status-approved {
+    color: green;
+}
+
+.status-awaiting {
+    color: red;
+}
+
+.status-progress {
+    color: yellowgreen;
+}
+
+.total-budget {
+    font-size: 1.5em;
+    text-align: center;
+}
