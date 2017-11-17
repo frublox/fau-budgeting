@@ -10,12 +10,12 @@ a:hover {
 }
 
 .previous {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: #C10435;
+    color: white;
 }
 
 .next {
-    background-color: #4CAF50;
+    background-color: #337ab7;
     color: white;
 }
 #myBtn {
