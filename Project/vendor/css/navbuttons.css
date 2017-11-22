@@ -10,11 +10,30 @@ a:hover {
 }
 
 .previous {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: #C10435;
+    color: white;
 }
 
 .next {
-    background-color: #4CAF50;
+    background-color: #337ab7;
     color: white;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    margin-left: 110px;
+    margin-bottom: 15px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #337ab7; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #C10435; /* Add a dark-grey background on hover */
 }
