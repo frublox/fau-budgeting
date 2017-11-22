@@ -10,7 +10,7 @@ namespace fau_budgeting
         struct Revenue
         {
             string[] Source { get; set; }
-            int[] SourceAmount { get; set}
+            int[] SourceAmount { get; set; }
         }
         struct XfersIn
         {

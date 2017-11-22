@@ -164,6 +164,7 @@
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
     <Content Include="budgetinfo.sshtml" />
     <Content Include="RevenueFund.sshtml" />
+    <Content Include="ReserveFund.sshtml" />
     <None Include="views\name.sshtml" />
     <None Include="views\master.sshtml" />
     <None Include="views\data.sshtml" />
@@ -172,10 +173,10 @@
   <ItemGroup>
     <Compile Include="AdminModule.cs" />
     <Compile Include="BudgetInfoModule.cs" />
-    <Compile Include="CodeFile1.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="EmailModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReserveFund.cs" />
     <Compile Include="RevenueFundModule.cs" />
     <Compile Include="TestModule.cs" />
   </ItemGroup>
