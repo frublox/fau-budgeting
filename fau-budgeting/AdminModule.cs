@@ -106,5 +106,5 @@ namespace fau_budgeting
 
             Get["/admin"] = _ => View["admin", data];
         }
-    }
+    } 
 }
