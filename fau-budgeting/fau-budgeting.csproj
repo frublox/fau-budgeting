@@ -68,7 +68,9 @@
       <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
@@ -171,14 +173,15 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminModule.cs" />
     <Compile Include="BudgetInfoModule.cs" />
+    <Compile Include="modules\AdminModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
-    <Compile Include="EmailModule.cs" />
+    <Compile Include="modules\EmailModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReserveFund.cs" />
     <Compile Include="RevenueFundModule.cs" />
     <Compile Include="TestModule.cs" />
+    <Compile Include="modules\TestModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
