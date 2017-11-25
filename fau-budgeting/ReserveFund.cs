@@ -1,5 +1,8 @@
 ﻿using Nancy;
 using System.Collections.Generic;
+using System.Web;
+using System.Web.Script.Serialization;
+using System.Linq;
 
 namespace fau_budgeting
 {
@@ -44,13 +47,33 @@ namespace fau_budgeting
     }
 
 
+
+
     public class ReserveFund : NancyModule
     {
         public ReserveFund()
         {
+            
 
 
-            Get["/reserve-fund"] = _ => View["ReserveFund"];
+           Get["/reserve-fund"] = _ => View["ReserveFund"];
+
+           Post["/reserve-fund/{smarttag}"] = parameters =>
+                {
+                    var dict = HttpUtility.ParseQueryString("");
+                    var json = new JavaScriptSerializer().Serialize(
+                            dict.Keys.Cast<string>()
+                                .ToDictionary(KeyNotFoundException => KeyNotFoundException, KeyNotFoundException => dict[KeyNotFoundException]));
+                    System.Console.WriteLine(json);
+                    System.Console.ReadLine();
+                    
+                   string smarttag = parameters.smarttag;
+
+                   return Negotiate;
+               };
+
+            
+
         }
     }
 }
