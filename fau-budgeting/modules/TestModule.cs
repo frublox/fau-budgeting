@@ -21,7 +21,7 @@ namespace fau_budgeting
             Get["/test/data"] = _ => View["data", data];
 
             // Example demonstrating capturing
-            Get["/test/{name}"] = parameters => View["name", parameters.name];
+            Get["/{name}"] = parameters => View["name", parameters.name];
         }
     }
 }

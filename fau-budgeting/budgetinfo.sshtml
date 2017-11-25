@@ -1,104 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿@Master['master.sshtml']
 
-<head>
+@Section['Title']
+Budget Request Info
+@EndSection
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Budget Request Info</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../vendor/css/navbuttons.css" rel="stylesheet">
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <div id="wrapper">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                  <a class="navbar-brand" href="admin.html"><img src="../images/FAU-logo-clr.png"></a> 
-            </div>
-            <!-- /.navbar-header -->
-            
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <!--Search Bar-->
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
-                        <!--/. Search Bar-->
-                        <li>
-                            <a href="admin.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <!--Archive-->
-                        <li>
-                            <a href="admin-archive.html"><i class="fa fa-sitemap fa-fw"></i> Archive</a>
-                        </li>
-                        <!--/.Archive--->
-                        <!--User Profile-->
-                        <li>
-                            <a href="#userprofile.html"><i class="fa fa-user fa-fw"></i> User Profile <span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="#settings.html"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
-                                <li class="divider"></li>
-                                <li><a href="admin-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <!--/. User Profile-->
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
-        <!-- /. Navigation -->
-
-        <!-- Page Content -->
-        <div id="page-wrapper">
+@Section['Content']
+<div id="page-wrapper">
             
                  <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header" style="text-align: center">Sport Club Council</h2>
+                        <h2 class="page-header" style="text-align: center">@Model.ClubName</h2>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -124,15 +35,15 @@
                                                     <tbody>
                                                         <tr>
                                                             <td width="25%">SmartTag:</td>
-                                                            <td class="form-control-static"> TAG001317</td>
+                                                            <td class="form-control-static">@Model.SmartTag</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Account Name:</td>
-                                                            <td class="form-control-static">Sport Club Council</td>
+                                                            <td class="form-control-static">@Model.AccountName</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Fund:</td>
-                                                            <td colspan="3">Student Government Reserve</td>
+                                                            <td colspan="3">@Model.Fund</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -160,7 +71,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Transfer In</td>
-                                                            <td width="50%">$1,600</td>
+                                                            <td width="50%">@Model.TotalIn</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -175,35 +86,35 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Equipment</td>
-                                                            <td class="form-control-static">$750</td>
+                                                            <td class="form-control-static">$@Model.Equipment</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Improvements</td>
-                                                            <td class="form-control-static">$500</td>
+                                                            <td class="form-control-static">$@Model.Improvements</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Contingencies</td>
-                                                            <td class="form-control-static">$420</td>
+                                                            <td class="form-control-static">$@Model.Contingencies/td>
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">Office Resource</td>
-                                                            <td class="form-control-static">$12,250</td>
+                                                            <td class="form-control-static">$@Model.OfficeResource</td>
                                                         </tr>
                                                          <tr>
                                                             <td class="form-control-static">Program</td>
-                                                            <td class="form-control-static">$10,000</td>
+                                                            <td class="form-control-static">$@Model.Program</td>
                                                         </tr>
                                                          <tr>
                                                             <td class="form-control-static">Services</td>
-                                                            <td class="form-control-static">$900</td>
+                                                            <td class="form-control-static">$@Model.Services</td>
                                                         </tr>
                                                          <tr>
                                                             <td class="form-control-static">Travel</td>
-                                                            <td class="form-control-static">$38,000</td>
+                                                            <td class="form-control-static">$@Model.Travel</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Expenses</td>
-                                                            <td colspan="2" >$62,820</td>
+                                                            <td colspan="2" >$@Model.TotalExpenses</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -217,7 +128,7 @@
                                                         
                                                         <tr>
                                                             <td width="50%">2.8% Overhead</td>
-                                                            <td colspan="2">$1,484</td>
+                                                            <td colspan="2">$@Model.Overhead</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -257,7 +168,7 @@
                                                         
                                                         <tr>
                                                             <td width="50%">Net Inflows/(Outflows)</td>
-                                                            <td colspan="2" >$64,204</td>
+                                                            <td colspan="2" >$@Model.Net</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -266,7 +177,8 @@
                                                         
                                                         <tr class="form-group">
                                                             <td colspan="4">
-                                                            <label>Please provide detailed supplemental schedules in support of the expenses</label><br>No file chosen
+                                                            <label>Please provide detailed supplemental schedules in support of the expenses</label>
+                                                            <input type="file" accept="application/pdf">
                                                             </td>    
                                                         </tr>
                                                         <tr>
@@ -279,7 +191,7 @@
                                         <!-- /.panel-body -->
                                     </div>
                                     <!-- /.panel-default -->     
-                       </fieldset>
+									</fieldset>
                     <!--/. fieldset-->
                 </form>
                 <!-- /.Form 1-->
@@ -299,32 +211,13 @@
             <!--/.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
-        
-        <!---Scroll to top-->
-        <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
-        <!---/. Scroll to top-->
 
-    </div>
-    <!-- /#wrapper -->
+   @EndSection
 
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    
-    <!--AJAX-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+@Section['Scripts']
+    <script src="/dist/js/sb-admin-2.js"></script>
+@EndSection
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../js/scroll-top.js"></script>
-    <script src="../dist/js/sb-admin-2.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="../dist/js/budget-total.js"></script>
-
-</body>
-</html>
+@Section['Styles']
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
+@EndSection

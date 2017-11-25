@@ -1,0 +1,10 @@
+﻿@Master['master.sshtml']
+
+@Section['Content']
+	<h1>Admin Page</h1>
+	<ol>
+		@Each
+			@Current
+		@EndEach
+	</ol>
+@EndSection
