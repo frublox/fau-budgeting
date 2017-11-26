@@ -1,5 +1,7 @@
 ﻿using Nancy;
 using System.Collections.Generic;
+using System.Linq;
+using System.Data.Linq;
 
 namespace fau_budgeting
 {
@@ -105,6 +107,38 @@ namespace fau_budgeting
             };
 
             Get["/admin"] = _ => View["admin", data];
+        }
+
+        // TODO Implement actual db connection
+        BudgetRequestData getDataStuff()
+        {
+            DataContext db = new DataContext("Server=localhost;Database=master;Trusted_Connection=True;");
+
+            Table<BudgetRequest> requests = db.GetTable<BudgetRequest>();
+
+            var queryUnreviewed =
+                from request in requests
+                where request.Status == BudgetRequestStatus.New
+                select request;
+
+            var queryReviewed =
+                from request in requests
+                where request.Status == BudgetRequestStatus.AwaitingResubmission
+                select request;
+
+            var queryApproved =
+                from request in requests
+                where request.Status == BudgetRequestStatus.Approved
+                select request;
+
+            BudgetRequestData data = new BudgetRequestData
+            {
+                Unreviewed = queryUnreviewed.ToList(),
+                Reviewed = queryReviewed.ToList(),
+                Approved = queryApproved.ToList()
+            };
+
+            return data;
         }
     }
 }

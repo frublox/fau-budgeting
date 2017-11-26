@@ -68,7 +68,9 @@
       <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
@@ -110,7 +112,14 @@
     <Content Include="content\vendor\raphael\raphael.js" />
     <Content Include="content\vendor\raphael\raphael.min.js" />
     <Content Include="icon.png" />
-    <Content Include="views\admin\request-panel.sshtml" />
+    <Content Include="views\admin\admin.sshtml" />
+    <Content Include="views\admin\request-panel.sshtml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="admin.sshtml" />
+    <Content Include="content\less\mixins.less" />
+    <Content Include="content\less\sb-admin-2.less" />
+    <Content Include="content\less\variables.less" />
     <Content Include="content\vendor\bootstrap-social\bootstrap-social.less" />
     <Content Include="content\vendor\bootstrap-social\bootstrap-social.scss" />
     <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
@@ -155,26 +164,28 @@
     <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="content\less\mixins.less" />
-    <Content Include="content\less\sb-admin-2.less" />
-    <Content Include="content\less\variables.less" />
-    <None Include="views\test\name.sshtml" />
-    <None Include="views\test\test-master.sshtml" />
-    <None Include="views\test\data.sshtml" />
-    <None Include="views\test\email.sshtml" />
-    <None Include="views\admin\admin.sshtml" />
+    <Content Include="budgetinfo.sshtml" />
+    <Content Include="RevenueFund.sshtml" />
+    <Content Include="ReserveFund.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminModule.cs" />
+    <Compile Include="BudgetInfoModule.cs" />
+    <Compile Include="modules\AdminModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
-    <Compile Include="EmailModule.cs" />
+    <Compile Include="modules\EmailModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestModule.cs" />
+    <Compile Include="ReserveFund.cs" />
+    <Compile Include="RevenueFundModule.cs" />
+    <Compile Include="modules\TestModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="views\master.sshtml" />
+    <Content Include="views\test\data.sshtml" />
+    <Content Include="views\test\email.sshtml" />
+    <Content Include="views\test\name.sshtml" />
+    <Content Include="views\test\test-master.sshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
