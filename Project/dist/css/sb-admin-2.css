@@ -464,3 +464,6 @@ table.dataTable thead .sorting:after {
 .em{
     font-style: italic;
 }
+.u{
+    text-decoration: underline;
+}

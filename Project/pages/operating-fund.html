@@ -199,11 +199,11 @@
                                                     <tbody>
                                                         <tr>
                                                             <td width="25%">SmartTag:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td colspan="3"><input required name = "smarttag" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Account Name:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td colspan="3"><input required name = "accountname" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Fund:</td>
@@ -216,34 +216,28 @@
                                                             <td colspan="2">To Student Budget Appropriations Committee: (Check Only One)</td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="25%">
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="">University-Wide
+                                                            <div class="form-group">
+                                                                <td width="25%">
+                                                                    <label class="radio-inline">
+                                                                        <input required type="radio" name="radiobutton" value="option1" checked>University-Wide
                                                                     </label>
-                                                                </div>
-                                                            </td>
-                                                            <td width="25%">
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="">Boca Raton
+                                                                </td>
+                                                                <td width="25%">
+                                                                    <label class="radio-inline">
+                                                                        <input required type="radio" name="radiobutton" value="option1" checked>Boca Raton
                                                                     </label>
-                                                                </div>
-                                                            </td>
-                                                            <td width="25%">
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="">Broward
+                                                                </td>
+                                                                <td width="25%">
+                                                                    <label class="radio-inline">
+                                                                        <input required type="radio" name="radiobutton" value="option1" checked>Broward
                                                                     </label>
-                                                                </div>
-                                                            </td>
-                                                            <td width="25%">
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="">Jupiter
+                                                                </td>
+                                                                <td width="25%">
+                                                                    <label class="radio-inline">
+                                                                        <input required type="radio" name="radiobutton" value="option1" checked>Jupiter
                                                                     </label>
-                                                                </div>
-                                                            </td>
+                                                                </td>
+                                                            </div>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="4"></td>
@@ -253,19 +247,19 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Name & Title:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td colspan="3"><input required name="title" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Telephone:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td colspan="3"><input required name="telephone" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Signature:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td colspan="3"><input required name="signature" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Email Address:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td colspan="3"><input required name="email" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="4"></td>
@@ -278,43 +272,43 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Salaries & Benefits</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "salaries" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Other Personal Services</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "services" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">OPS-Graduate Assistant</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "ops-ga" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Expenses</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "expenses" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">Transfers Out</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "transfersout" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">2.8% Overhead</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "overhead" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="25%">TOTAL</td>
-                                                            <td width="25%"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td width="25%"><input required name = "total" type = "number" class="form-control highlighted_input" placeholder="$"></td>
                                                             <td width="25%">$0</td>
                                                             <td width="25%">0.00%</td>
                                                         </tr>
@@ -349,11 +343,11 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td width="25%">SmartTag:</td>
-                                                                <td colspan="7"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="7"><input required name = "smarttag" type = "text" class="form-control highlighted_input"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Account Name:</td>
-                                                                <td colspan="7"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="7"><input required name = "accountname" type = "text" class="form-control highlighted_input"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Fund:</td>
@@ -365,7 +359,7 @@
                                                             </tr>
                                                             
                                                             <tr>
-                                                                <td colspan="7" style="text-align: center"><strong>Benefit Rates</strong></td>
+                                                                <td colspan="7" style="text-align: center" class="strong">Benefit Rates</td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">AMP-filled</td>
@@ -385,11 +379,11 @@
                                                             </tr>
                                                     
                                                             <tr>
-                                                                <td colspan="7" style="text-align: center"><strong>2018-2019 Budget Request</strong></td>
+                                                                <td colspan="7" style="text-align: center" class="strong">2018-2019 Budget Request</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>AMP</strong></td>
-                                                                <td colspan="7"><strong>Please enter employee data at current rate.</strong></td>
+                                                                <td width="25%" class = "strong">AMP</td>
+                                                                <td colspan="7" class = "strong">Please enter employee data at current rate.</td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Position Number</td>
@@ -401,65 +395,65 @@
                                                                 <td width="25%">Total</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled1" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled2" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled3" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled4" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled5" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled6" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber7" type = "text" class="form-control input"></td>
                                                                 <td width="25%">Possible Merit/State Increase</td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "fte7" type = "text" class="form-control input"></td>
                                                                 <td width="25%">0</td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled7" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
@@ -475,7 +469,7 @@
                                                             </tr>
                                                     
                                                             <tr>
-                                                                <td colspan="7">*If a position is unfilled, leave Position Title <u><strong>blank.</strong></u></td>
+                                                                <td colspan="7">*If a position is unfilled, leave Position Title <span class = "strong u">blank.</span></td>
                                                             </tr>
                                                             
                                                             <tr>
@@ -483,11 +477,11 @@
                                                             </tr>
                                                             
                                                            <tr>
-                                                                <td colspan="7" style="text-align: center"><strong>2018-2019 Budget Request</strong></td>
+                                                                <td colspan="7" style="text-align: center" class="strong">2018-2019 Budget Request</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>SP</strong></td>
-                                                                <td colspan="7"><strong>Please enter employee data at current rate.</strong></td>
+                                                                <td width="25%" class="strong">SP</td>
+                                                                <td colspan="7" class="strong">Please enter employee data at current rate.</td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Position Number</td>
@@ -499,65 +493,65 @@
                                                                 <td width="25%">Total</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle7" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate7" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled8" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled9" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled10" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled11" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled12" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input"></td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber13" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "ptitle12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "fte13" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%"><input required name = "annualrate12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled13" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "pnumber14" type = "text" class="form-control input"></td>
                                                                 <td width="25%">Possible Merit/State Increase</td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%"><input required name = "fte14" type = "text" class="form-control input"></td>
                                                                 <td width="25%">0</td>
-                                                                <td width="25%"><input class="form-control input"></td>
+                                                                <td width="25%" style = "text-align: center"><input name = "filled14" id="checkBox" type="checkbox"></td>
                                                                 <td width="25%">0</td>
                                                                 <td width="25%">$0</td>
                                                             </tr>
@@ -574,7 +568,7 @@
                                                     
                                                     
                                                             <tr>
-                                                                <td colspan="7">*If a position is unfilled, leave Position Title <u><strong>blank.</strong></u></td>
+                                                                <td colspan="7">*If a position is unfilled, leave Position Title <span class="strong u">blank.</span></td>
                                                             </tr>
                                                             
                                                             <tr>
@@ -582,8 +576,8 @@
                                                             </tr>
                                                             
                                                             <tr>
-                                                                <td colspan="3"><strong>Total Salary and Benefits</strong> (This total carries to summary page): </td>
-                                                                <td colspan="4"> <input class="form-control highlighted_input" placeholder ="$"></td>
+                                                                <td colspan="3"><span class = "strong">Total Salary and Benefits</span> (This total carries to summary page): </td>
+                                                                <td colspan="4"><input required name = "totalsalaries" type = "number" class="form-control highlighted_input" placeholder ="$"></td>
                                                             </tr>
                                                         </tbody> 
                                                         <!--/.tbody-->
@@ -615,11 +609,11 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td width="25%">SmartTag:</td>
-                                                                <td colspan="9"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="9"><input required name = "smarttag" type = "text" class="form-control highlighted_input"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Account Name:</td>
-                                                                <td colspan="9"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="9"><input required name = "accountname" type = "text" class="form-control highlighted_input"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Fund:</td>
@@ -631,7 +625,7 @@
                                                             </tr>
                                                             
                                                             <tr>
-                                                                <td colspan="9" style="text-align: center"><strong>2018-2019 Budget Request</strong></td>
+                                                                <td colspan="9" style="text-align: center" class="strong">2018-2019 Budget Request</td>
                                                             </tr>
                                                             
                                                             <tr>
@@ -647,162 +641,162 @@
                                                             </tr>
                                                             
                                                             <tr> <!--Text Fields--->
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate1" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours1" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks1" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people1" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate2" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours2" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks2" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people2" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate3" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours3" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks3" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people3" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate4" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours4" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks4" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people4" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate5" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours5" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks5" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people5" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate6" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours6" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks6" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people6" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle7" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other7" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate7" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours7" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks7" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people7" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate8" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours8" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks8" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people8" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate9" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours9" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks9" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people9" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate10" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours10" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks10" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people10" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate11" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours11" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks11" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people11" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate12" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours12" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks12" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people12" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle13" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other13" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate13" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours13" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks13" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people13" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle14" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "other14" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate14" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours14" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks14" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "people14" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
                                                             </tr> <!-- /.Text Fields--->
                                                             
                                                             <tr>
-                                                                <td colspan="6"><strong>TOTAL OPS - Other Than Graduate Assistant </strong></td>
+                                                                <td colspan="6" class = "strong">TOTAL OPS - Other Than Graduate Assistant</td>
                                                                 <td>0</td>
                                                                 <td>0</td>
                                                                 <td>$0</td>
@@ -840,11 +834,11 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td width="25%">SmartTag:</td>
-                                                                <td colspan="9"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="9"><input required name = "smarttag" type = "text" class="form-control highlighted_input"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Account Name:</td>
-                                                                <td colspan="9"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="9"><input required name = "accountname" type = "text" class="form-control highlighted_input"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Fund:</td>
@@ -864,101 +858,101 @@
                                                             </tr>
                                                             
                                                             <tr> <!--Text Fields--->
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle15" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate15" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours15" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks15" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle16" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate16" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours16" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks16" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle17" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate17" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours17" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks17" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle18" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate18" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours18" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks18" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle19" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate19" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours19" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks19" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle20" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate20" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours20" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks20" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle21" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate21" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours21" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks21" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle22" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate22" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours22" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks22" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle23" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate23" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours23" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks23" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle24" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate24" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours24" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks24" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle25" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate25" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours25" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks25" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle26" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate26" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours26" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks26" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle27" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate27" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours27" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks27" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
+                                                                <td><input required name = "ptitle28" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hrate28" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "hours28" type = "number" class="form-control highlighted_input"></td>
+                                                                <td><input required name = "weeks28" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
@@ -999,11 +993,11 @@
                                                     <tbody>
                                                         <tr>
                                                             <td width="50%">SmartTag:</td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "smarttag" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Account Name:</td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "accountname" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Fund:</td>
@@ -1011,59 +1005,59 @@
                                                         </tr>
 
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="3"></td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td style="text-align: center"><strong>Description</strong></td>
-                                                            <td style="text-align: center"><strong>2018-2019 Requested Budget</strong></td>
+                                                            <td style="text-align: center" class = "strong">Description</td>
+                                                            <td style="text-align: center" class = "strong">2018-2019 Requested Budget</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Support Services</td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "support" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Food Services</td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "food" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Programs and Services</td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "programs" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Travel</td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "travel" type = "text" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "descr1" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "budget1" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "descr2" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "budget2" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "descr3" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "budget3" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "descr4" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "budget4" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "descr5" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "budget5" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">TOTAL EXPENSE</td>
                                                             <td width="50%">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%">(This Total Carries to Summary Page)</td>
+                                                            <td colspan="3">(This Total Carries to Summary Page)</td>
                                                         </tr>
 
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="3"></td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -1071,30 +1065,30 @@
                                                             <td style="text-align: center"><strong>2018-2019 Requested Budget</strong></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%">Transfers Out to Smart Tag(s):</td>
+                                                            <td colspan="3">Transfers Out to Smart Tag(s):</td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "transout1" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "transout2" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "transout3" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "transout4" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
-                                                            <td width="50%"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "transout5" type = "text" class="form-control highlighted_input"></td>
+                                                            <td width="50%"><input required name = "transout6" type = "number" class="form-control highlighted_input"></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">TOTAL TRANSFERS OUT</td>
                                                             <td width="50%">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%">(This Total Carries to Summary Page)</td>
+                                                            <td colspan="3">(This Total Carries to Summary Page)</td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="3"></td>
                                                         </tr>
                                                         <tr class="form-group">
                                                             <td colspan="4">
@@ -1172,7 +1166,7 @@
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="3"></td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -1183,12 +1177,12 @@
                                                         <tr>
                                                             <td colspan="4">
                                                                 <label>Justification:</label>
-                                                                <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                                <textarea name="salaries-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="3"></td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -1199,7 +1193,7 @@
                                                         <tr>
                                                             <td colspan="4">
                                                                 <label>Justification:</label>
-                                                                <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                                <textarea name = "ops-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                             </td>
                                                         </tr>
                                                         
@@ -1215,12 +1209,12 @@
                                                         <tr>
                                                             <td colspan="4">
                                                                 <label>Justification:</label>
-                                                                <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                                <textarea name = "ops-ga-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="3"></td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -1230,38 +1224,36 @@
                                                             <td colspan="4">(Individually list each spend category requested.  Show the unit cost of each item, number needed, and total amount. Provide justification for each item and relate it to specific project objectives. If appropriate, certain items may be shown by an estimated amount per year times the number of direct staff in the budget category.)</td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="text-align: center"><strong>Description</strong></td>
-                                                            <td style="text-align: center"><strong>2018-2019 Requested Budget</strong></td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td style="text-align: center" class="strong">Description</td>
+                                                            <td style="text-align: center" class="strong">2018-2019 Requested Budget</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Support Services</td>
-                                                            <td>$0</td>
+                                                            <td style="text-align: center">Support Services</td>
+                                                            <td style="text-align: center">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Food Services</td>
-                                                            <td>$0</td>
+                                                            <td style="text-align: center">Food Services</td>
+                                                            <td style="text-align: center">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Programs and Services</td>
-                                                            <td>$0</td>
+                                                            <td style="text-align: center">Programs and Services</td>
+                                                            <td style="text-align: center">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Travel</td>
-                                                            <td>$0</td>
+                                                            <td style="text-align: center">Travel</td>
+                                                            <td style="text-align: center">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Other (if applicable)</td>
-                                                            <td>$0</td>
+                                                            <td style="text-align: center">Other (if applicable)</td>
+                                                            <td style="text-align: center">$0</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>TOTAL</td>
-                                                            <td>$0</td>
+                                                            <td style="text-align: center">TOTAL</td>
+                                                            <td style="text-align: center">$0</td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td></td>
+                                                            <td colspan="4"></td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -1273,7 +1265,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "support-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1286,7 +1278,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "food-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1299,7 +1291,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "programs-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1312,7 +1304,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "travel-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1325,7 +1317,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "other-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1338,7 +1330,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "transout-justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                     </tbody> 
                                                 </table>
