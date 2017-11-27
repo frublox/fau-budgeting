@@ -6,7 +6,11 @@
 
 @Section['Content']
 
-<div id="page-wrapper">
+<!-- Form 2 -->
+        <form name="form2" id="form2" action="/reserve-fund-submit" target="hidden" method="post" enctype="multipart/form-data">
+        <!--MY CODE IS HERE-->
+        <!-- Page Content -->
+        <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Reserve Fund Request Form</h1>
@@ -17,6 +21,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
                                  <li class="active">
@@ -26,14 +31,14 @@
                                     <a href="#supplemental" data-toggle="tab">Supplemental Form - Reserve</a>
                                 </li>
                             </ul>
+                            <!---/. Nav tabs--->
 
                             <!-- Tab panes -->
                             <div class="tab-content">
                                     
                                 <!--Reserve Fund Summary & Detail-->
                                 <div class="tab-pane fade in active" id="summary">  
-                                <!-- Form 1 -->
-                                <form name="form1" id="form1" action="../php/formdata.php" target="hidden" method="post" enctype="multipart/form-data">
+        
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <p style="text-align: center">
@@ -219,27 +224,21 @@
                                                             <input type="file" accept="application/pdf">
                                                             </td>    
                                                         </tr>
-                                                        <tr>
-                                                                <td colspan="4" style="text-align: right"><input type="submit" value="Submit" name="submit"></td>
-                                                        </tr>
                                                     </tbody>
+                                                    <!----/. tbody---->
                                                 </table>
+                                                <!--/. table--->
                                             </div>
-                                            <!-- End Table Placement -->
                                             <!-- /.table-responsive -->
                                         </div>
                                         <!-- /.panel-body -->
                                     </div>
                                     <!-- /.panel-default -->
-                                    </form>
-                                    <!-- /.Form 1-->
                                 </div>
                                 <!--/. Reserve Fund Summary & Detail-->
                                   
                                 <!-- Supplemental Form - Reserve Tab -->
-                                <div class="tab-pane fade" id="supplemental">
-                                <!-- Form 2 -->
-                                <form name="form2" id="form2" action="http://formdata.php" method="post" enctype="multipart/form-data">   
+                                <div class="tab-pane fade" id="supplemental"> 
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <p style="text-align: center">
@@ -424,63 +423,48 @@
                                                                 <td colspan="3"><textarea class="form-control" rows="6"></textarea>
                                                                 </td>
                                                             </tr>   
-                                                            <tr>
-                                                                <td colspan="4" style="text-align: right"><input type="submit" value="Submit" name="submit"></td>
-                                                            </tr>
                                                     </tbody>
+                                                    <!--/. tbody-->
                                                 </table>
+                                                <!---/. table-->
                                             </div>    
                                                 <!--/. table-responsive -->
                                         </div>
                                         <!-- /. panel-body -->
                                     </div>
                                     <!--/. panel-default -->
-                                
-                                        </form>
-                                <!-- /.Form 2-->
-                                    </div>
+                                </div>
                                 <!-- /. Supplemental Form - Reserve Tab -->
                             </div>
                             <!-- /.Tab panes -->
                         </div>
                         <!-- /.panel-body -->
+                        
+                        <!-- Submit Button-->
+                        <div class="submit">
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <!--/. Submit Button--->
+                        
                     </div>
-
-					
-
                     <!-- /.panel -->
                 </div>
                 <!-- /.col-lg-6 -->
             </div>
         </div>
-		</form>
-		@EndSection
+        <!-- /#page-wrapper -->
+        </form>
+        <!--/. Form 2-->
+        <!--END OF MY CODE-->
+        <!---Scroll to top-->
+        <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
+        <!---/. Scroll to top-->
+    </div>
+    <!-- /#wrapper -->
+	@EndSection
 
 @Section['Scripts']
     <script src="/dist/js/sb-admin-2.js"></script>
-	<!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-     <!--AJAX-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../js/scroll-top.js"></script>
-    <script src="../dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
-    </script>
 @EndSection
 
 @Section['Styles']
