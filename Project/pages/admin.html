@@ -70,8 +70,34 @@
                         </li>
                         <!--Archive-->
                         <li>
-                            <a href="admin-archive.html"
-                               ><i class="fa fa-archive fa-fw"></i> Archive</a>
+                            <a href="#"><i class="fa fa-archive fa-fw"></i> Archive<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
                         </li>
                         <!--/.Archive--->
                         <!--User Profile-->
@@ -107,7 +133,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h4 style="text-align: center"><a href="javascript:getRes()"></a>Approved Total Budget: $ <input id="total" type="text" placeholder=0 disabled="disabled"></h4>
+                    <h4 style="text-align: center"><a href="javascript:getRes()"></a>Approved Total Budget: $ <input name="approvedbudgettotal" id="total" type="text" placeholder=0 disabled="disabled"></h4>
                 </div>
             </div>
             <!-- Unreviewed Requests Panel-->
