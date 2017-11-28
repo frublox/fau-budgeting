@@ -137,7 +137,7 @@
                    <fieldset disabled="disabled">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <p style="text-align: center;">
+                            <p style="text-align: center;" class="strong">
                                 ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM <br>
                                 RESERVE FUND SUMMARY AND DETAIL <br>
                                 FOR THE FISCAL YEAR ENDING June 30, 2019
@@ -311,20 +311,20 @@
                 </form>
                 <!-- /.Form 1-->
                 
-                <div class="row">
+                <div class="row" name="commentsection" id="commentsection">
                 <!---Feedback Form-->
                 <form action="URL to form script" method="POST">
                     <div class="col-md-2">
                         <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
                             <div id="feedback" class="collapse">
                                 <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
-                                <input type="button" class="btn btn-info" name="send" value="Send">  
-                            </div>
+                                <input type="button" class="btn btn-info" name="send" value="Send">   
+                        </div>    
                     </div>   
                 </form>    
                 <!--/. Feedback Form--->
                 <!---Accept Form-->
-                <form action="URL to form script" method="POST">    
+                <form onsubmit="return confirm('Are you sure you want to accept this the form?');" action="URL to form script" method="POST">    
                     <div class="col-md-2">
                         <input type="button" class="btn btn-success" name = "accept" value="Accept">
                     </div>
@@ -344,6 +344,15 @@
     </div>
     <!-- /#wrapper -->
 
+    <!--Confirmation Script--->
+    <script>
+    document.getElementById("commentsection").onsubmit=function(){validate()}
+    
+    function confirmation() {
+            alert("Are you sure you want to send feedback?");
+    }
+    </script>
+    
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     

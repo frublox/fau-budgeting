@@ -117,7 +117,34 @@
                         <!---/. Supplemental Forms--->
                         <!---Archive---->
                         <li>
-                            <a href="organization-archive.html"><i class="fa fa-archive fa-fw"></i> Archive</a>
+                            <a href="#"><i class="fa fa-archive fa-fw"></i> Archive<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
                         </li>
                         <!---/. Archive---->
                         <!---User Profile-->
@@ -330,7 +357,7 @@
                                     <!-- h4>FAU_F0167 - Salary & Benefits Tab</h4 -->
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <p style="text-align: center">
+                                                <p style="text-align: center" class="strong">
                                                 ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM<br>
                                                 SALARY AND BENEFITS<br> 
                                                 FOR THE FISCAL YEAR ENDING June 30, 2019
@@ -1366,6 +1393,15 @@
     </div>
     <!-- /#wrapper -->
 
+    <!--Confirmation Script--->
+    <script>
+    document.getElementById("form3").onsubmit=function(){confirmation()}
+    
+    function confirmation() {
+            alert("Are you sure you want to submit this form?");
+    }
+    </script>
+    
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     
