@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-		<li>@Model.smarttag</li>
-		<li>@Model.accountname</li>
+		<li>@Model.rev_fund_smarttag</li>
+		<li>@Model.rev_fund_accountname</li>
 		<li>@Model.transferin1</li>
 		<li>@Model.transferin2</li>
 		<li>@Model.transferin3</li>
