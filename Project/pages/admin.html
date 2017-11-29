@@ -70,8 +70,34 @@
                         </li>
                         <!--Archive-->
                         <li>
-                            <a href="admin-archive.html"
-                               ><i class="fa fa-archive fa-fw"></i> Archive</a>
+                            <a href="#"><i class="fa fa-archive fa-fw"></i> Archive<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
                         </li>
                         <!--/.Archive--->
                         <!--User Profile-->
@@ -107,7 +133,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h4 style="text-align: center"><a href="javascript:getRes()"></a>Approved Total Budget: $ <input id="total" type="text" placeholder=0 disabled="disabled"></h4>
+                    <h4 style="text-align: center"><a href="javascript:getRes()"></a>Approved Total Budget: $ <input name="approvedbudgettotal" id="total" type="text" placeholder=0 disabled="disabled"></h4>
                 </div>
             </div>
             <!-- Unreviewed Requests Panel-->
@@ -207,27 +233,27 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="budget-request-info.html" class="list-group-item">
+                                <a href="budget-request-accepted.html" class="list-group-item">
                                     <p> Sport Club Council <br> <span class="status-approved"> Accepted <br></span>
                                     <span class="pull-right text-muted small strong em">11/15/2017</span>
                                     </p>
                                 </a>
-                                <a href="#budget-request-info.html" class="list-group-item">
+                                <a href="#budget-request-accepted.html" class="list-group-item">
                                     <p> Name of Organization <br> <span class="status-approved"> Accepted <br></span>
                                     <span class="pull-right text-muted small strong em">11/14/2017</span>
                                     </p>
                                 </a>
-                                <a href="#budget-request-info.html" class="list-group-item">
+                                <a href="#budget-request-accepted.html" class="list-group-item">
                                     <p> Name of Organization <br> <span class="status-approved"> Accepted <br></span>
                                     <span class="pull-right text-muted small strong em"> 11/13/2017</span>
                                     </p>    
                                 </a>
-                                <a href="#budget-request-info.html" class="list-group-item">
+                                <a href="#budget-request-accepted.html" class="list-group-item">
                                     <p> Name of Organization <br> <span class="status-approved"> Accepted <br></span>
                                     <span class="pull-right text-muted small strong em"> 11/10/2017</span>
                                     </p>
                                 </a>
-                                <a href="#budget-request-info.html" class="list-group-item">
+                                <a href="#budget-request-accepted.html" class="list-group-item">
                                     <p> Name of Organization <br> <span class="status-approved"> Accepted <br></span>
                                     <span class="pull-right text-muted small strong em">11/09/2017</span>
                                     </p>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Budget Request Info</title>
+    <title>Budget Request Submitted</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,14 +46,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                  <a class="navbar-brand" href="admin.html"><img src="../images/FAU-logo-clr.png"></a> 
+                  <a class="navbar-brand" href="organization.html"><img src="../images/FAU-logo-clr.png"></a> 
             </div>
             <!-- /.navbar-header -->
-            
+
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <!--Search Bar-->
+                        <!--Searchbar-->
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
@@ -65,11 +65,48 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <!--/. Search Bar-->
+                        <!--/.Searchbar-->
                         <li>
-                            <a href="admin.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="organization.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        <!--Archive-->
+                        <!--Request Forms-->
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Submit Request Form<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="revenue-fund.html">Revenue Fund Form</a>
+                                </li>
+                                <li>
+                                    <a href="reserve-fund.html">Reserve Fund Form</a>
+                                </li>
+                                <li>
+                                    <a href="operating-fund.html">Operating Fund Form</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!--/. Request Forms-->
+                        <!---Supplemental Forms-->
+                        <li>
+                            <a href="#"><i class="fa fa-folder-open-o fa-fw"></i> Supplemental Forms<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="../forms/ExpenseJustificationForm07.18.16.pdf" target="_blank">Expense Justification</a>
+                                    </li>
+                                    <li>
+                                        <a href="../forms/NonRoutineJustification.pdf" target="_blank">Non Routine Justification</a>
+                                    </li>
+                                    <li>
+                                        <a href="../forms/PerformanceAgreement2013.pdf" target="_blank">Performance Agreement</a>
+                                    </li>
+                                    <li>
+                                        <a href="../forms/TravelExpenseJustificationForm.pdf" target="_blank">Travel Expense Justification</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                        </li>
+                        <!---/. Supplemental Forms--->
+                        <!---Archive---->
                         <li>
                             <a href="#"><i class="fa fa-archive fa-fw"></i> Archive<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -100,14 +137,16 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <!--/.Archive--->
-                        <!--User Profile-->
+                        <!---/. Archive---->
+                        <!---User Profile-->
                         <li>
                             <a href="#userprofile.html"><i class="fa fa-user fa-fw"></i> User Profile <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li><a href="#settings.html"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+                                <li><a href="#settings.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                                </li>
                                 <li class="divider"></li>
-                                <li><a href="admin-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -137,7 +176,7 @@
                    <fieldset disabled="disabled">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <p style="text-align: center;" class="strong">
+                            <p style="text-align: center">
                                 ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM <br>
                                 RESERVE FUND SUMMARY AND DETAIL <br>
                                 FOR THE FISCAL YEAR ENDING June 30, 2019
@@ -310,49 +349,22 @@
                     <!--/. fieldset-->
                 </form>
                 <!-- /.Form 1-->
-                
-                <div class="row" name="commentsection" id="commentsection">
-                <!---Feedback Form-->
-                <form action="URL to form script" method="POST">
-                    <div class="col-md-2">
-                        <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
-                            <div id="feedback" class="collapse">
-                                <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
-                                <input type="button" class="btn btn-info" name="send" value="Send">   
-                        </div>    
-                    </div>   
-                </form>    
-                <!--/. Feedback Form--->
-                <!---Accept Form-->
-                <form onsubmit="return confirm('Are you sure you want to accept this the form?');" action="URL to form script" method="POST">    
-                    <div class="col-md-2">
-                        <input type="button" class="btn btn-success" name = "accept" value="Accept">
-                    </div>
-                </form>    
-                <!--/. Accept Form--->
-                </div> 
-                
+                <div class="row">
+                     <div class="col-md-2">
+                            <h4>Comments:</h4> <textarea placeholder="You're missing the required supplemental forms to justify these budgets expense, please download the Expense Justification Form and attach it to the form when you are going to resubmit. 
+                            Thank you, Eddie" name="comments" rows="6" cols="60"></textarea><br>
+                    </div>  
+                </div>
             </div>
             <!--/.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
-        
         <!---Scroll to top-->
         <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
         <!---/. Scroll to top-->
-
     </div>
     <!-- /#wrapper -->
 
-    <!--Confirmation Script--->
-    <script>
-    document.getElementById("commentsection").onsubmit=function(){validate()}
-    
-    function confirmation() {
-            alert("Are you sure you want to send feedback?");
-    }
-    </script>
-    
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     

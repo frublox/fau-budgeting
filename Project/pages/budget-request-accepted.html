@@ -310,28 +310,6 @@
                     <!--/. fieldset-->
                 </form>
                 <!-- /.Form 1-->
-                
-                <div class="row" name="commentsection" id="commentsection">
-                <!---Feedback Form-->
-                <form action="URL to form script" method="POST">
-                    <div class="col-md-2">
-                        <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
-                            <div id="feedback" class="collapse">
-                                <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
-                                <input type="button" class="btn btn-info" name="send" value="Send">   
-                        </div>    
-                    </div>   
-                </form>    
-                <!--/. Feedback Form--->
-                <!---Accept Form-->
-                <form onsubmit="return confirm('Are you sure you want to accept this the form?');" action="URL to form script" method="POST">    
-                    <div class="col-md-2">
-                        <input type="button" class="btn btn-success" name = "accept" value="Accept">
-                    </div>
-                </form>    
-                <!--/. Accept Form--->
-                </div> 
-                
             </div>
             <!--/.container-fluid -->
         </div>
@@ -344,15 +322,6 @@
     </div>
     <!-- /#wrapper -->
 
-    <!--Confirmation Script--->
-    <script>
-    document.getElementById("commentsection").onsubmit=function(){validate()}
-    
-    function confirmation() {
-            alert("Are you sure you want to send feedback?");
-    }
-    </script>
-    
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     
