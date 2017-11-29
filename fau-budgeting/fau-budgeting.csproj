@@ -176,6 +176,7 @@
     <Compile Include="modules\AdminModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="modules\EmailModule.cs" />
+    <Compile Include="OperatingFund.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReserveFund.cs" />
     <Compile Include="modules\TestModule.cs" />
@@ -188,6 +189,7 @@
     <Content Include="views\test\name.sshtml" />
     <Content Include="views\test\test-master.sshtml" />
     <Content Include="views\display.sshtml" />
+    <Content Include="OperatingFund.sshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
