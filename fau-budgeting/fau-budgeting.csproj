@@ -168,6 +168,10 @@
     <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="views\master-org.sshtml" />
+    <Content Include="views\master-asab.sshtml" />
+    <None Include="views\navigation\nav-asab.sshtml" />
+    <None Include="views\navigation\nav-org.sshtml" />
     <Content Include="views\ReserveFund.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -198,6 +202,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

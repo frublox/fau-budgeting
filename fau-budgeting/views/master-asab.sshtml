@@ -1,0 +1,5 @@
+﻿@Master['master.sshtml']
+
+@Section['Navigation']
+    @Partial['nav-org.sshtml']
+@EndSection

@@ -1,4 +1,4 @@
-﻿@Master['master.sshtml']
+﻿@Master['master-asab.sshtml']
 
 @Section['Title']
     ASAB - Admin Launch Screen
@@ -25,7 +25,7 @@
                         <i class="fa fa-bell fa-fw"></i> Unreviewed Requests
                     </div>
 
-                    @Partial['request-panel', Model.Unreviewed];
+                    @Partial['request-panel.sshtml', Model.Unreviewed];
                 </div>
             </div>
 
@@ -36,7 +36,7 @@
                         <i class="fa fa-bell fa-fw"></i> Reviewed Requests
                     </div>
 
-                    @Partial['request-panel', Model.Reviewed];
+                    @Partial['request-panel.sshtml', Model.Reviewed];
                 </div>
             </div>
 

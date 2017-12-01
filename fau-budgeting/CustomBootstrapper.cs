@@ -1,5 +1,6 @@
 ﻿using Nancy;
 using Nancy.Conventions;
+using Nancy.Diagnostics;
 
 namespace fau_budgeting
 {
@@ -12,6 +13,16 @@ namespace fau_budgeting
             conventions.StaticContentsConventions.Add(
                 StaticContentConventionBuilder.AddDirectory("/", "content/")
             );
+        }
+
+        protected override DiagnosticsConfiguration DiagnosticsConfiguration
+        {
+            get
+            {
+                var d = base.DiagnosticsConfiguration;
+                d.Password = "password";
+                return d;
+            }
         }
     }
 }
