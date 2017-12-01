@@ -168,19 +168,19 @@
     <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="ReserveFund.sshtml" />
+    <Content Include="views\ReserveFund.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BudgetInfoModule.cs" />
+    <Compile Include="modules\BudgetInfoModule.cs" />
     <Compile Include="modules\AdminModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="modules\EmailModule.cs" />
-    <Compile Include="OperatingFund.cs" />
+    <Compile Include="modules\OperatingFund.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReserveFund.cs" />
+    <Compile Include="modules\ReserveFund.cs" />
     <Compile Include="modules\TestModule.cs" />
-    <Compile Include="RevenueFund.cs" />
+    <Compile Include="modules\RevenueFund.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -190,8 +190,8 @@
     <Content Include="views\test\name.sshtml" />
     <Content Include="views\test\test-master.sshtml" />
     <Content Include="views\display.sshtml" />
-    <Content Include="OperatingFund.sshtml" />
-    <Content Include="RevenueFund.sshtml" />
+    <Content Include="views\OperatingFund.sshtml" />
+    <Content Include="views\RevenueFund.sshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

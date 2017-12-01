@@ -103,8 +103,8 @@ namespace fau_budgeting
             Expenses exp = new Expenses(10, 20, 30, 40, 50, 60, 70);
 
 
-            //Get["/budget-request-info"] = _ => View["budgetinfo", exp];
-            Get["/budget-request-info"] = _ => View["budgetinfo", info2];
+            Get["/budget-request-info"] = _ => View["budgetinfo", exp];
+            //Get["/budget-request-info"] = _ => View["budgetinfo", info2];
             //Get["/budget-request-info"] = _ => View["budgetinfo", info];
         }
     }
