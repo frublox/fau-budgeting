@@ -1,7 +1,14 @@
-﻿namespace fau_budgeting
+﻿using Newtonsoft.Json.Linq;
+
+namespace fau_budgeting
 {
     public partial class BudgetRequest
     {
+        public JObject GetRequestDataAsJson()
+        {
+            return JObject.Parse(RequestData);
+        }
+
         public HtmlProps Html
         {
             get
