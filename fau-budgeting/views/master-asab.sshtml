@@ -1,5 +1,17 @@
-﻿@Master['master.sshtml']
+﻿@Master['master']
 
 @Section['Navigation']
-    @Partial['nav-org.sshtml']
+    @Partial['navigation/nav-asab'];
+@EndSection
+
+@Section['Content']
+    @Section['Content']
+@EndSection
+
+@Section['Scripts']
+    @Section['Scripts']
+@EndSection
+
+@Section['Styles']
+    @Section['Styles']
 @EndSection

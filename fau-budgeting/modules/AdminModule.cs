@@ -1,37 +1,14 @@
 ﻿using Nancy;
 using System.Collections.Generic;
 using System.Linq;
-using System.Data.Linq;
 
 namespace fau_budgeting
 {
-    enum BudgetRequestStatus
-    {
-        New,
-        InProgress,
-        AwaitingResubmission,
-        Approved
-    }
-
-    class HtmlProps
-    {
-        public string Class;
-    }
-
-    class BudgetRequest
-    {
-        public string Organization;
-        public string Date;
-        public BudgetRequestStatus Status;
-        public string StatusText;
-        public int Id;
-        public HtmlProps Props;
-    }
-
     class BudgetRequestData
     {
         public List<BudgetRequest> Unreviewed;
         public List<BudgetRequest> Reviewed;
+        public List<BudgetRequest> Accepted;
         public List<BudgetRequest> Approved;
         public decimal ApprovedBudget;
     }
@@ -40,102 +17,51 @@ namespace fau_budgeting
     {
         public AdminModule()
         {
-            // Example of data that would be obtained from DB call
-            BudgetRequestData data = new BudgetRequestData
+            Get["/admin"] = _ =>
             {
-                Unreviewed = new List<BudgetRequest>
-                {
-                    new BudgetRequest()
-                    {
-                        Organization = "Organization 1",
-                        Date = "Today",
-                        Status = BudgetRequestStatus.New,
-                        StatusText = "New",
-                        Id = 1,
-                        Props = new HtmlProps()
-                        {
-                            Class = "status-new"
-                        }
-                    },
-                    new BudgetRequest()
-                    {
-                        Organization = "Organization 4",
-                        Date = "Today",
-                        Status = BudgetRequestStatus.New,
-                        StatusText = "In Progress",
-                        Id = 4,
-                        Props = new HtmlProps()
-                        {
-                            Class = "status-progress"
-                        }
-                    }
-                },
-
-                Reviewed = new List<BudgetRequest>
-                {
-                    new BudgetRequest()
-                    {
-                        Organization = "Organization 2",
-                        Date = "Tomorrow",
-                        Status = BudgetRequestStatus.AwaitingResubmission,
-                        StatusText = "Awaiting Resubmission",
-                        Id = 2,
-                        Props = new HtmlProps()
-                        {
-                            Class = "status-awaiting"
-                        }
-                    }
-                },
-
-                Approved = new List<BudgetRequest>
-                {
-                    new BudgetRequest()
-                    {
-                        Organization = "Organization 3",
-                        Date = "Yesterday",
-                        Status = BudgetRequestStatus.Approved,
-                        StatusText = "Approved",
-                        Id = 3,
-                        Props = new HtmlProps()
-                        {
-                            Class = "status-approved"
-                        }
-                    }
-                },
-
-                ApprovedBudget = 1500.30M
+                var data = getBudgetRequestData();
+                return View["admin", data];
             };
-
-            Get["/admin"] = _ => View["admin", data];
         }
-
-        // TODO Implement actual db connection
-        BudgetRequestData getDataStuff()
+        
+        BudgetRequestData getBudgetRequestData()
         {
-            DataContext db = new DataContext("Server=localhost;Database=master;Trusted_Connection=True;");
+            // This needs to be changed to use the actual database
+            string connStr = "Server=localhost;Database=fau-budgeting;Trusted_Connection=True;";
 
-            Table<BudgetRequest> requests = db.GetTable<BudgetRequest>();
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
 
             var queryUnreviewed =
-                from request in requests
-                where request.Status == BudgetRequestStatus.New
+                from request in db.BudgetRequests
+                where request.Status == "New"
                 select request;
 
             var queryReviewed =
-                from request in requests
-                where request.Status == BudgetRequestStatus.AwaitingResubmission
+                from request in db.BudgetRequests
+                where request.Status == "Awaiting Resubmission"
+                select request;
+
+            var queryAccepted =
+                from request in db.BudgetRequests
+                where request.Status == "Accepted"
                 select request;
 
             var queryApproved =
-                from request in requests
-                where request.Status == BudgetRequestStatus.Approved
+                from request in db.BudgetRequests
+                where request.Status == "Approved"
                 select request;
+
+            var queryApprovedBudget =
+                from global in db.Globals
+                select global;
 
             BudgetRequestData data = new BudgetRequestData
             {
                 Unreviewed = queryUnreviewed.ToList(),
                 Reviewed = queryReviewed.ToList(),
-                Approved = queryApproved.ToList()
+                Accepted = queryAccepted.ToList(),
+                Approved = queryApproved.ToList(),
+                ApprovedBudget = queryApprovedBudget.First().ApprovedBudget
             };
 
             return data;
