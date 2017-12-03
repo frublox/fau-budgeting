@@ -1,5 +1,7 @@
 ﻿using Nancy;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 
 namespace fau_budgeting
@@ -26,8 +28,7 @@ namespace fau_budgeting
         
         BudgetRequestData getBudgetRequestData()
         {
-            // This needs to be changed to use the actual database
-            string connStr = "Server=localhost;Database=fau-budgeting;Trusted_Connection=True;";
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
 
             BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
 
