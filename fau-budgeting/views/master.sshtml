@@ -18,6 +18,10 @@
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+	<!--Additional Project CSS-->
+    <link href="../vendor/css/fund.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/css/navbuttons.css" rel="stylesheet">
+
     @Section['Styles']
 </head>
 <body>

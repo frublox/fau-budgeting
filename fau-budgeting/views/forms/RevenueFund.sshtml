@@ -833,6 +833,15 @@
 
 @Section['Scripts']
     <script src="/dist/js/sb-admin-2.js"></script>
+	<script src="/js/scroll-top.js"></script>
+	<!--Confirmation Script--->
+    <script>
+    document.getElementById("form1").onsubmit=function(){confirmation()}
+    
+    function confirmation() {
+            alert("Are you sure you want to submit this form?");
+    }
+    </script>
 @EndSection
 
 @Section['Styles']

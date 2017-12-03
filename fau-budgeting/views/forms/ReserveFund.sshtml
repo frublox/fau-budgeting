@@ -477,14 +477,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="../js/scroll-top.js"></script>
     <script src="../dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+	
+	<!--Confirmation Script--->
     <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
+    document.getElementById("form2").onsubmit=function(){confirmation()}
+    
+    function confirmation() {
+            alert("Are you sure you want to submit this form?");
+    }
     </script>
 @EndSection
 
