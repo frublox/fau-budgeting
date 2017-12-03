@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fau-budgeting", "fau-budgeting\fau-budgeting.csproj", "{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FauBudgeting", "fau-budgeting\FauBudgeting.csproj", "{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
