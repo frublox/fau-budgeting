@@ -1,4 +1,4 @@
-﻿@Master['master.sshtml']
+﻿@Master['master-asab']
 
 @Section['Title']
     ASAB - Admin Launch Screen
@@ -19,10 +19,10 @@
             </p>
 
             <!-- Unreviewed Requests Panel-->
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bell fa-fw"></i> Unreviewed Requests
+                        <i class="fa fa-bell fa-fw"></i> Unreviewed
                     </div>
 
                     @Partial['request-panel', Model.Unreviewed];
@@ -30,21 +30,31 @@
             </div>
 
             <!-- Reviewed requests Panel-->
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bell fa-fw"></i> Reviewed Requests
+                        <i class="fa fa-bell fa-fw"></i> Awaiting Resubmission
                     </div>
 
                     @Partial['request-panel', Model.Reviewed];
                 </div>
             </div>
 
-            <!-- Approved Request Panel-->
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bell fa-fw"></i> Approved Requests
+                        <i class="fa fa-bell fa-fw"></i> Accepted
+                    </div>
+
+                    @Partial['request-panel', Model.Accepted];
+                </div>
+            </div>
+
+            <!-- Approved Request Panel-->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Approved
                     </div>
                     
                     @Partial['request-panel', Model.Approved];

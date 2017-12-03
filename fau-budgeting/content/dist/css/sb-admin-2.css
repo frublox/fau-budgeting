@@ -441,6 +441,10 @@ table.dataTable thead .sorting:after {
     color: green;
 }
 
+.status-accepted {
+    color:lightgreen;
+}
+
 .status-awaiting {
     color: red;
 }
@@ -457,6 +461,7 @@ table.dataTable thead .sorting:after {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .strong{
     font-weight: bold;
 }
@@ -466,4 +471,8 @@ table.dataTable thead .sorting:after {
 }
 .u{
     text-decoration: underline;
+=======
+.request-type {
+    font-style: italic;
+>>>>>>> f557b14b852fab47287b488f7614026d74ef6429
 }

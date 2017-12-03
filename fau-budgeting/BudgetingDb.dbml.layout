@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BudgetingDb">
+  <DataContextMoniker Name="/BudgetingDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c0e2de42-97e4-4732-a2d7-a06188ec90a3" absoluteBounds="6.25, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BudgetingDbDataContext/BudgetRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8dd42ad-e36d-48a1-b1fb-3cad5396340d" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78a0ebba-0aa8-479b-a712-4d765c7681d6" absoluteBounds="3.5, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BudgetingDbDataContext/Organization" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f10633a-843d-4bdb-b82e-3d64eb6f8e00" absoluteBounds="3.515, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d6ba230-36e1-40e4-8167-c624277f2bbc" absoluteBounds="0.75, 3.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/BudgetingDbDataContext/Global" />
+      <nestedChildShapes>
+        <elementListCompartment Id="018ef3e6-e362-48b0-af16-dfa9a9080785" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1cac973c-3677-44b2-b33f-a105ecfd63cc" absoluteBounds="0.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BudgetingDbDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53a0f606-a9e2-415f-9761-c3967b512d61" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.94314697265625); (6.25 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BudgetingDbDataContext/Organization/Organization_BudgetRequest" />
+      <nodes>
+        <classShapeMoniker Id="78a0ebba-0aa8-479b-a712-4d765c7681d6" />
+        <classShapeMoniker Id="c0e2de42-97e4-4732-a2d7-a06188ec90a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BudgetingDbDataContext/User/User_Organization" />
+      <nodes>
+        <classShapeMoniker Id="1cac973c-3677-44b2-b33f-a105ecfd63cc" />
+        <classShapeMoniker Id="78a0ebba-0aa8-479b-a712-4d765c7681d6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
