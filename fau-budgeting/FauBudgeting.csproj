@@ -47,6 +47,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
@@ -56,6 +62,9 @@
     </Reference>
     <Reference Include="Nancy.Hosting.Aspnet, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
       <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
@@ -70,6 +79,7 @@
       <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
@@ -168,10 +178,34 @@
     <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="views\ReserveFund.sshtml" />
+    <Content Include="views\master-org.sshtml" />
+    <Content Include="views\master-asab.sshtml" />
+    <Content Include="views\forms\ReserveFund.sshtml" />
+    <Content Include="views\forms\RevenueFund.sshtml" />
+    <Content Include="views\budgetinfo.sshtml" />
+    <Content Include="BudgetingDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BudgetingDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="BudgetingDb.dbml.layout">
+      <DependentUpon>BudgetingDb.dbml</DependentUpon>
+    </None>
+    <None Include="views\navigation\nav-asab.sshtml" />
+    <None Include="views\navigation\nav-org.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BudgetingDb.cs">
+      <DependentUpon>BudgetingDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetingDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgetingDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetRequest.cs" />
+    <Compile Include="HtmlProps.cs" />
     <Compile Include="modules\BudgetInfoModule.cs" />
     <Compile Include="modules\AdminModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
@@ -190,14 +224,20 @@
     <Content Include="views\test\name.sshtml" />
     <Content Include="views\test\test-master.sshtml" />
     <Content Include="views\display.sshtml" />
-    <Content Include="views\OperatingFund.sshtml" />
-    <Content Include="views\RevenueFund.sshtml" />
+    <Content Include="views\forms\OperatingFund.sshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
