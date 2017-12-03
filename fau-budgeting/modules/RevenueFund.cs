@@ -199,7 +199,7 @@ namespace fau_budgeting
         {
             public RevenueFund()
             {
-                Get["/revenue-fund"] = _ => View["RevenueFund"];
+                Get["/revenue-fund"] = _ => View["forms/RevenueFund"];
 
                 Post["/revenue-fund-submit"] = _ =>
                 {
@@ -216,11 +216,11 @@ namespace fau_budgeting
                     //
                     var revenueRequest = new BudgetRequest
                     {
-                        //DateTime Date {Get; }
+                        Date = DateTime.Now,
                         Status = "New",
                         OrganizationId = 1,
                         RequestType = "Revenue Fund",
-                        //RequestData = GetRequestDataAsJson(json);
+                        RequestData = json
                     };
 
 
@@ -238,7 +238,7 @@ namespace fau_budgeting
                         db.SubmitChanges();
                     }
 
-                    return View["RevenueFund"];
+                    return Response.AsRedirect("/organization");
                 };
             }
         }
