@@ -12,8 +12,8 @@ namespace fau_budgeting
 {
     public class Reserve_Request
     {
-        public string smarttag { get; set; }
-        public string accountname { get; set; }
+        public string res_fund_supp_smarttag { get; set; }
+        public string res_fund_supp_account_name { get; set; }
         public string transferin1 { get; set; }
         public int transferin2 { get; set; }
         public string transferin3 { get; set; }
