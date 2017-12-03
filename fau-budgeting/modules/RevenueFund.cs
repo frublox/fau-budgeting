@@ -134,7 +134,7 @@ namespace fau_budgeting
         public string rev_fund_ops_title_12 { get; set; }
         public int rev_fund_ops_rate_12 { get; set; }
         public int rev_fund_ops_hours_12 { get; set; }
-        public int rev_fund_ops_weeks_12{ get; set; }
+        public int rev_fund_ops_weeks_12 { get; set; }
         public int rev_fund_ops_people_12 { get; set; }
 
         public string rev_fund_ops_position_13 { get; set; }
@@ -148,7 +148,7 @@ namespace fau_budgeting
         public string rev_fund_ops_title_14 { get; set; }
         public int rev_fund_ops_rate_14 { get; set; }
         public int rev_fund_ops_hours_14 { get; set; }
-        public int rev_fund_ops_weeks_14{ get; set; }
+        public int rev_fund_ops_weeks_14 { get; set; }
         public int rev_fund_ops_people_14 { get; set; }
 
         public string rev_fund_supp_smarttag { get; set; }
@@ -162,7 +162,7 @@ namespace fau_budgeting
         public string rev_fund_supp_ops_approved { get; set; }
         public string rev_fund_supp_ops_request { get; set; }
         public string rev_fund_supp_expenses_approved { get; set; }
-        public string rev_fund_supp_expenses_request { get; set; } 
+        public string rev_fund_supp_expenses_request { get; set; }
         public string rev_fund_supp_transfers_out_approved { get; set; }
         public string rev_fund_supp_transfers_out_request { get; set; }
         public string rev_fund_supp_overhead_approved { get; set; }
@@ -192,53 +192,55 @@ namespace fau_budgeting
         public string rev_fund_supp_other_justification { get; set; }
         public int rev_fund_supp_transfer_out_requested { get; set; }
         public string rev_fund_supp_transfer_out_justification { get; set; }
-        
-      
 
-    public class RevenueFund : NancyModule
-    {
-        public RevenueFund()
+
+
+        public class RevenueFund : NancyModule
         {
-            Get["/revenue-fund"] = _ => View["RevenueFund"];
-
-            Post["/revenue-fund-submit"] = _ =>
+            public RevenueFund()
             {
-                //binds fields from form
-                Revenue_Request request = this.Bind<Revenue_Request>();
+                Get["/revenue-fund"] = _ => View["RevenueFund"];
 
-                //converts to a string
-                string json = new JavaScriptSerializer().Serialize(request);
-
-                //connects to DB
-                string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-                BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
-
-                //
-                var rbudgequest = new BudgetRequest
+                Post["/revenue-fund-submit"] = _ =>
                 {
-                    Status = "New",
-                    OrganizationId = 1,
-                    RequestType = "Revenue Fund",
-                    
+                    //binds fields from form
+                    Revenue_Request request = this.Bind<Revenue_Request>();
+
+                    //converts to a string
+                    var json = new JavaScriptSerializer().Serialize(request);
+
+                    //connects to DB
+                    string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+                    BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+                    //
+                    var revenueRequest = new BudgetRequest
+                    {
+                        //DateTime Date {Get; }
+                        Status = "New",
+                        OrganizationId = 1,
+                        RequestType = "Revenue Fund",
+                        //RequestData = GetRequestDataAsJson(json);
+                    };
+
+
+                    //submit request
+                    db.BudgetRequests.InsertOnSubmit(revenueRequest);
+
+                    try
+                    {
+                        //submit changes
+                        db.SubmitChanges();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                        db.SubmitChanges();
+                    }
+
+                    return View["RevenueFund"];
                 };
-
-                
-                //submit request
-                db.BudgetRequests.InsertOnSubmit(req);
-
-                try
-                {
-                    //submit changes
-                    db.SubmitChanges();
-                }
-                catch(Exception e)
-                {
-                    //Consule.WriteLine(e);
-                    db.SubmitChanges();
-                }
-
-                return View["RevenueFund"];
-            };
+            }
         }
     }
 }

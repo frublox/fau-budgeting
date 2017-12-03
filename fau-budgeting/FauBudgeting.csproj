@@ -196,6 +196,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardData.cs" />
     <Compile Include="BudgetingDb.cs">
       <DependentUpon>BudgetingDb.dbml</DependentUpon>
     </Compile>
@@ -205,6 +206,7 @@
       <DependentUpon>BudgetingDb.dbml</DependentUpon>
     </Compile>
     <Compile Include="BudgetRequest.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="HtmlProps.cs" />
     <Compile Include="modules\BudgetInfoModule.cs" />
     <Compile Include="modules\AdminModule.cs" />
