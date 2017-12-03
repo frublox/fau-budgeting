@@ -63,5 +63,19 @@ namespace fau_budgeting
 
             return query.ToList();
         }
+
+        public static User GetUser(string email)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+            var query =
+                from user in db.Users
+                where user.Email == email
+                select user;
+
+            return query.FirstOrDefault();
+        }
     }
 }
