@@ -1,7 +1,7 @@
 ﻿@Master['master-asab']
 
 @Section['Title']
-    ASAB - Admin Launch Screen
+    ASAB - Dashboard
 @EndSection
 
 @Section['Content']
@@ -62,12 +62,4 @@
             </div>
         </div>
     </div>
-@EndSection
-
-@Section['Scripts']
-    <script src="/dist/js/sb-admin-2.js"></script>
-@EndSection
-
-@Section['Styles']
-    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
 @EndSection

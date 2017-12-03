@@ -18,9 +18,13 @@
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+<<<<<<< HEAD
 	<!--Additional Project CSS-->
     <link href="../vendor/css/fund.css" rel="stylesheet" type="text/css">
     <link href="../vendor/css/navbuttons.css" rel="stylesheet">
+=======
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
+>>>>>>> c3cba18188c39e3d17d8ec75c2da8074d117163c
 
     @Section['Styles']
 </head>
@@ -42,6 +46,8 @@
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <script src="/dist/js/sb-admin-2.js"></script>
 
     @Section['Scripts']
 </body>

@@ -1,0 +1,44 @@
+﻿@Master['master-org']
+
+@Section['Title']
+    Organization - Dashboard
+@EndSection
+
+@Section['Content']
+    <div id="page-wrapper">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Dashboard</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class=".col-xs-12 .col-sm-6 .col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-file-text-o fa-fw"></i> Recent Budget Requests
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            @Each
+                                <a href="/budget-request-info?id=@Current.Id" class="list-group-item">
+                                    <p>
+                                        <span class="request">@Current.RequestType</span> <br> <span class="@Current.Html.Class">@Current.Status<br></span>
+                                        <span class="pull-right text-muted small" class="strong em">@Current.Date</span>
+                                    </p>
+                                </a>
+                            @EndEach
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+@EndSection
+
+@Section['Styles']
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
+@EndSection

@@ -6,12 +6,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="/images/FAU-logo-clr.png"></a>
+        <a class="navbar-brand" href="organization.html"><img src="../images/FAU-logo-clr.png"></a>
     </div>
+    <!-- /.navbar-header -->
 
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
+                <!--Searchbar-->
                 <li class="sidebar-search">
                     <div class="input-group custom-search-form">
                         <input type="text" class="form-control" placeholder="Search...">
@@ -21,47 +23,72 @@
                             </button>
                         </span>
                     </div>
+                    <!-- /input-group -->
                 </li>
+                <!--/.Searchbar-->
                 <li>
-                    <a href="admin.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <a href="/organization"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
+                <!--Request Forms-->
                 <li>
-                    <a href="#"><i class="fa fa-sitemap fa-fw"></i> Archive<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-files-o fa-fw"></i> Submit Request Form<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Second Level Item</a>
+                            <a href="/revenue-fund">Revenue Fund Form</a>
                         </li>
                         <li>
-                            <a href="#">Second Level Item</a>
+                            <a href="/reserve-fund">Reserve Fund Form</a>
                         </li>
                         <li>
-                            <a href="#">Third Level <span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">Third Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Item</a>
-                                </li>
-                            </ul>
+                            <a href="/operating-fund">Operating Fund Form</a>
                         </li>
                     </ul>
+                    <!-- /.nav-second-level -->
                 </li>
+                <!--/. Request Forms-->
+                <!---Supplemental Forms-->
+                <li>
+                    <a href="#"><i class="fa fa-folder-open-o fa-fw"></i> Supplemental Forms<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="/forms/ExpenseJustificationForm07.18.16.pdf" target="_blank">Expense Justification</a>
+                        </li>
+                        <li>
+                            <a href="/forms/NonRoutineJustification.pdf" target="_blank">Non Routine Justification</a>
+                        </li>
+                        <li>
+                            <a href="/forms/PerformanceAgreement2013.pdf" target="_blank">Performance Agreement</a>
+                        </li>
+                        <li>
+                            <a href="/forms/TravelExpenseJustificationForm.pdf" target="_blank">Travel Expense Justification</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <!---/. Supplemental Forms--->
+                <!---Archive---->
+                <li>
+                    <a href="organization-archive.html"><i class="fa fa-archive fa-fw"></i> Archive</a>
+                </li>
+                <!---/. Archive---->
+                <!---User Profile-->
                 <li>
                     <a href="#userprofile.html"><i class="fa fa-user fa-fw"></i> User Profile <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="#settings.html"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+                        <li>
+                            <a href="#settings.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
                         <li class="divider"></li>
-                        <li><a href="admin-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                        <li>
+                            <a href="/"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
                     </ul>
+                    <!-- /.nav-second-level -->
                 </li>
+                <!--/. User Profile-->
             </ul>
         </div>
+        <!-- /.sidebar-collapse -->
     </div>
+    <!-- /.navbar-static-side -->
 </nav>
