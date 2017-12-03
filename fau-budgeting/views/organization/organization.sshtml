@@ -24,7 +24,7 @@
                             @Each
                                 <a href="/budget-request-info?id=@Current.Id" class="list-group-item">
                                     <p>
-                                        <span class="request">@Current.Type</span> <br> <span class="@Current.Html.Class">@Current.Status<br></span>
+                                        <span class="request">@Current.RequestType</span> <br> <span class="@Current.Html.Class">@Current.Status<br></span>
                                         <span class="pull-right text-muted small" class="strong em">@Current.Date</span>
                                     </p>
                                 </a>
