@@ -18,6 +18,8 @@
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
+
     @Section['Styles']
 </head>
 <body>
@@ -38,6 +40,8 @@
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <script src="/dist/js/sb-admin-2.js"></script>
 
     @Section['Scripts']
 </body>

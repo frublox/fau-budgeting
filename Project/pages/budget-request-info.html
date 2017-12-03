@@ -74,6 +74,11 @@
                             <a href="admin-archive.html"><i class="fa fa-archive fa-fw"></i> Archive</a>
                         </li>
                         <!--/.Archive--->
+                        <!--Spreadsheet-->
+                        <li>
+                            <a href="#spreadsheet"><i class="fa fa-download fa-fw"></i>UBAC/CBAC Excel</a>
+                        </li>
+                        <!--/.Spreadsheet--->
                         <!--User Profile-->
                         <li>
                             <a href="#userprofile.html"><i class="fa fa-user fa-fw"></i> User Profile <span class="fa arrow"></span></a>
@@ -285,25 +290,21 @@
                 <!-- /.Form 1-->
                 
                 <div class="row" name="commentsection" id="commentsection">
-                <!---Feedback Form-->
-                <form action="URL to form script" method="POST">
-                    <div class="col-md-2">
-                        <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
-                            <div id="feedback" class="collapse">
-                                <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
-                                <input type="button" class="btn btn-info" name="send" value="Send">   
-                        </div>    
-                    </div>   
-                </form>    
-                <!--/. Feedback Form--->
-                <!---Accept Form-->
-                <form onsubmit="return confirm('Are you sure you want to accept this the form?');" action="URL to form script" method="POST">    
-                    <div class="col-md-2">
-                        <input type="button" class="btn btn-success" name = "accept" value="Accept">
-                    </div>
-                </form>    
-                <!--/. Accept Form--->
-                </div> 
+                    <!---Feedback Form-->
+                    <form action="URL to form script" method="POST">
+                        <div class="col-md-3">
+                            <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
+                            <form onsubmit="return confirm('Are you sure you want to send this form?');" action="URL to form script" method="POST">    
+                            <input type="button" class="btn btn-success" name = "accept" value="Accept">
+                            </form>
+                                <div id="feedback" class="collapse">
+                                    <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
+                                    <input type="button" class="btn btn-info" name="send" value="Send">   
+                                </div>    
+                        </div>   
+                    </form>    
+                    <!--/. Feedback Form--->
+                </div>
                 
             </div>
             <!--/.container-fluid -->

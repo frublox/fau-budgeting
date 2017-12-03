@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Budget Request Info</title>
+    <title>Accepted Budget Request</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,6 +74,11 @@
                             <a href="admin-archive.html"><i class="fa fa-archive fa-fw"></i> Archive</a>
                         </li>
                         <!--/.Archive--->
+                        <!--Spreadsheet-->
+                        <li>
+                            <a href="#spreadsheet"><i class="fa fa-download fa-fw"></i>UBAC/CBAC Excel</a>
+                        </li>
+                        <!--/.Spreadsheet--->
                         <!--User Profile-->
                         <li>
                             <a href="#userprofile.html"><i class="fa fa-user fa-fw"></i> User Profile <span class="fa arrow"></span></a>
@@ -283,6 +288,23 @@
                     <!--/. fieldset-->
                 </form>
                 <!-- /.Form 1-->
+                
+                <div class="row" name="commentsection" id="commentsection">
+                    <!---Feedback Form-->
+                    <form action="URL to form script" method="POST">
+                        <div class="col-md-3">
+                            <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
+                            <form onsubmit="return confirm('Are you sure you want to send this form?');" action="URL to form script" method="POST">    
+                            <input type="button" class="btn btn-success" name = "accept" value="Approved">
+                            </form>
+                                <div id="feedback" class="collapse">
+                                    <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
+                                    <input type="button" class="btn btn-info" name="send" value="Send">   
+                                </div>    
+                        </div>   
+                    </form>    
+                    <!--/. Feedback Form--->
+                </div>
             </div>
             <!--/.container-fluid -->
         </div>
