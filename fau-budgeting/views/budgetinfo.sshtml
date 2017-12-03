@@ -59,15 +59,15 @@ Budget Request Info
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">TAG110011</td>
-                                                            <td class="form-control-static">$560</td>
+                                                            <td class="form-control-static">@Model.tagsin1</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">TAG220022</td>
-                                                            <td class="form-control-static">$780</td>
+                                                            <td class="form-control-static">@Model.tagsin2</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">TAG330033</td>
-                                                            <td class="form-control-static">$260</td>
+                                                            <td class="form-control-static">@Model.tagsin3</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Transfer In</td>
