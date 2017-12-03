@@ -450,7 +450,7 @@ table.dataTable thead .sorting:after {
 }
 
 .request {
-    color: crimson;
+    color: orangered;
 }
 .total-budget {
     font-size: 1.5em;

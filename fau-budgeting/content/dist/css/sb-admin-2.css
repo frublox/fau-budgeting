@@ -449,7 +449,21 @@ table.dataTable thead .sorting:after {
     color: yellowgreen;
 }
 
+.request {
+    color: orangered;
+}
 .total-budget {
     font-size: 1.5em;
     text-align: center;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.em{
+    font-style: italic;
+}
+.u{
+    text-decoration: underline;
 }
