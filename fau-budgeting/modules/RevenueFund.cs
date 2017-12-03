@@ -1,6 +1,10 @@
 ﻿using Nancy;
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 
 
 
@@ -188,7 +192,8 @@ namespace fau_budgeting
         public string rev_fund_supp_other_justification { get; set; }
         public int rev_fund_supp_transfer_out_requested { get; set; }
         public string rev_fund_supp_transfer_out_justification { get; set; }
-    }
+        
+      
 
     public class RevenueFund : NancyModule
     {
@@ -198,8 +203,39 @@ namespace fau_budgeting
 
             Post["/revenue-fund-submit"] = _ =>
             {
+                //binds fields from form
                 Revenue_Request request = this.Bind<Revenue_Request>();
-                var json = new JavaScriptSerializer().Serialize(request);
+
+                //converts to a string
+                string json = new JavaScriptSerializer().Serialize(request);
+
+                //connects to DB
+                string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+                BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+                //
+                var rbudgequest = new BudgetRequest
+                {
+                    Status = "New",
+                    OrganizationId = 1,
+                    RequestType = "Revenue Fund",
+                    
+                };
+
+                
+                //submit request
+                db.BudgetRequests.InsertOnSubmit(req);
+
+                try
+                {
+                    //submit changes
+                    db.SubmitChanges();
+                }
+                catch(Exception e)
+                {
+                    //Consule.WriteLine(e);
+                    db.SubmitChanges();
+                }
 
                 return View["RevenueFund"];
             };
