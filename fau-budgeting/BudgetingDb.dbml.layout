@@ -2,10 +2,10 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BudgetingDb">
   <DataContextMoniker Name="/BudgetingDbDataContext" />
   <nestedChildShapes>
-    <classShape Id="c0e2de42-97e4-4732-a2d7-a06188ec90a3" absoluteBounds="6.25, 0.875, 2, 1.9631982421875">
+    <classShape Id="c0e2de42-97e4-4732-a2d7-a06188ec90a3" absoluteBounds="6.25, 0.875, 2, 2.1554996744791666">
       <DataClassMoniker Name="/BudgetingDbDataContext/BudgetRequest" />
       <nestedChildShapes>
-        <elementListCompartment Id="b8dd42ad-e36d-48a1-b1fb-3cad5396340d" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b8dd42ad-e36d-48a1-b1fb-3cad5396340d" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="78a0ebba-0aa8-479b-a712-4d765c7681d6" absoluteBounds="3.5, 1.25, 2, 1.3862939453125">
@@ -33,7 +33,7 @@
         <classShapeMoniker Id="c0e2de42-97e4-4732-a2d7-a06188ec90a3" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BudgetingDbDataContext/User/User_Organization" />
       <nodes>
         <classShapeMoniker Id="1cac973c-3677-44b2-b33f-a105ecfd63cc" />

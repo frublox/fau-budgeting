@@ -105,6 +105,7 @@
     <Content Include="content\dist\js\sb-admin-2.js" />
     <Content Include="content\dist\js\sb-admin-2.min.js" />
     <Content Include="content\images\FAU-logo-clr.png" />
+    <Content Include="content\js\budget-info.js" />
     <Content Include="content\js\name.js" />
     <Content Include="content\vendor\bootstrap-social\bootstrap-social.css" />
     <Content Include="content\vendor\bootstrap\css\bootstrap.css" />
@@ -181,6 +182,12 @@
     <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="views\budget-info\budget-info-actions.sshtml" />
+    <Content Include="views\budget-info\budget-info-reserve.sshtml" />
+    <Content Include="views\budget-info\budget-info-operating.sshtml" />
+    <None Include="views\budget-info\budget-info-revenue.sshtml" />
+    <Content Include="views\forms\form-operating.sshtml" />
+    <None Include="views\forms\form-reserve.sshtml" />
     <Content Include="views\master-org.sshtml" />
     <Content Include="views\master-asab.sshtml" />
     <Content Include="views\forms\ReserveFund.sshtml" />
@@ -195,6 +202,7 @@
       <DependentUpon>BudgetingDb.dbml</DependentUpon>
     </None>
     <Content Include="views\login.sshtml" />
+    <Content Include="views\forms\form-revenue.sshtml" />
     <None Include="views\navigation\nav-asab.sshtml" />
     <None Include="views\navigation\nav-org.sshtml" />
     <Content Include="Web.config" />
@@ -218,16 +226,20 @@
     <Compile Include="BudgetRequest.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="HtmlProps.cs" />
-    <Compile Include="modules\BudgetInfoModule.cs" />
     <Compile Include="modules\AdminModule.cs" />
+    <Compile Include="modules\ApiModule.cs" />
+    <Compile Include="modules\BudgetInfoModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="modules\EmailModule.cs" />
     <Compile Include="modules\LoginModule.cs" />
     <Compile Include="modules\OperatingFund.cs" />
     <Compile Include="modules\OrganizationModule.cs" />
+    <Compile Include="Operating_Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="modules\ReserveFund.cs" />
     <Compile Include="modules\RevenueFund.cs" />
+    <Compile Include="Reserve_Request.cs" />
+    <Compile Include="Revenue_Request.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

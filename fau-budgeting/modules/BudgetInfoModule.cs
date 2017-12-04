@@ -1,64 +1,164 @@
 ﻿using Nancy;
+using Nancy.ModelBinding;
 
 namespace fau_budgeting
 {
-
-    public class BudgetInfo
+    class FormData
     {
-        public string ClubName;
-        public string SmartTag;
-        public string AccountName;
-        public string Fund;
-        public int Overhead;
-        public int Net;
-        public int NumTagsIn;
-        public int tagsin1;
-        public int tagsin2;
-        public int tagsin3;
-        public int TotalIn;
-        public void Total_In_Calc()
+        public int Id;
+        public string Comments;
+        public string RequestType;
+    }
+
+    class BudgetInfoData
+    {
+        public string Route;
+        public string ButtonText;
+
+        public BudgetRequest Request;
+
+        public bool IsOrg = false;
+        public bool IsAdmin = false;
+        public bool ShowButton = true;
+        public bool Resubmit = false;
+
+        public string MasterTemplate
         {
-            TotalIn = tagsin1 + tagsin2 + tagsin3;
+            get
+            {
+                if (IsAdmin) return "master-asab.sshtml";
+                else return "master-org.sshtml";
+            }
         }
-        
-        public int tagsout1;
-        public int tagsout2;
-        public int tagsout3;
-        public int TotalOut;
-        public void Total_Out_Calc()
-        {
-            TotalOut = tagsout1 + tagsout2 + tagsout3;
-        }
-        public int Equipment;
-        public int Improvements;
-        public int Contingencies;
-        public int OfficeResource;
-        public int Program;
-        public int Services;
-        public int Travel;
-        public int TotalExpenses;
-        public string comments;
-        }
+    }
 
     public class BudgetInfoModule : NancyModule
     {
-        public BudgetInfoModule()
+        public BudgetInfoModule() : base("/budget-request-info")
         {
-            BudgetInfo info = new BudgetInfo
+            Get["/admin"] = _ => 
             {
-                ClubName = "Robotics Club",
-                SmartTag = "Niner55312",
-                AccountName = "Robotics Club Council",
-                Fund = "Student Government Reserve",
-                Overhead = 2500,
-                Net = 80000,
-                  
-             
+                int id = Request.Query["id"];
+                BudgetRequest request = Database.GetBudgetRequest(id);
+                string requestType = request?.RequestType;
 
+                var data = new BudgetInfoData
+                {
+                    Request = request
+                };
+
+                data.IsAdmin = true;
+
+                if (request.Status == "New")
+                {
+                    data.Route = "accept";
+                    data.ButtonText = "Accept";
+                }
+                else if (request.Status == "Accepted")
+                {
+                    data.Route = "approve";
+                    data.ButtonText = "Approve";
+                }
+                else if (request.Status == "Approved" || request.Status == "Awaiting Resubmission")
+                {
+                    data.ShowButton = false;
+                }
+
+                if (requestType == "Revenue Fund")
+                {
+                    
+                    return View["budget-info/budget-info-revenue", data];
+                }
+                else if (requestType == "Reserve Fund")
+                {
+                    return View["budget-info/budget-info-reserve", data];
+                }
+                else if (requestType == "Operating Fund")
+                {
+                    return View["budget-info/budget-info-operating", data];
+                }
+                else
+                {
+                    return "Budget request was not found.";
+                }
             };
 
-            Get["/budget-request-info"] = _ => View["budgetinfo", info];
+            Get["/organization"] = _ =>
+            {
+                int id = Request.Query["id"];
+                BudgetRequest request = Database.GetBudgetRequest(id);
+                string requestType = request?.RequestType;
+
+                var data = new BudgetInfoData
+                {
+                    Request = request
+                };
+
+                data.IsOrg = true;
+                data.ShowButton = false;
+
+                if (request.Status == "Awaiting Resubmission")
+                {
+                    data.Resubmit = true;
+                }
+
+                if (requestType == "Revenue Fund")
+                {
+                    return View["budget-info/budget-info-revenue", data];
+                }
+                else if (requestType == "Reserve Fund")
+                {
+                    return View["budget-info/budget-info-reserve", data];
+                }
+                else if (requestType == "Operating Fund")
+                {
+                    return View["budget-info/budget-info-operating", data];
+                }
+                else
+                {
+                    return "Budget request was not found.";
+                }
+            };
+
+            Post["/accept"] = _ =>
+            {
+                var data = this.Bind<FormData>();
+
+                Database.AcceptBudgetRequest(data.Id);
+
+                return Response.AsRedirect("/admin");
+            };
+
+            Post["/edit"] = _ =>
+            {
+                var data = this.Bind<FormData>();
+
+                if (data.RequestType == "Revenue Fund")
+                {
+                    return Response.AsRedirect("/revenue-fund?id=" + data.Id);
+                }
+                else if (data.RequestType == "Reserve Fund")
+                {
+                    return Response.AsRedirect("/reserve-fund?id=" + data.Id);
+                }
+                else if (data.RequestType == "Operating Fund")
+                {
+                    return Response.AsRedirect("/operating-fund?id=" + data.Id);
+                }
+                else
+                {
+                    return "Invalid request type";
+                }
+            };
             
+            Post["/send-back"] = _ =>
+            {
+                var data = this.Bind<FormData>();
+
+                Database.SendBackBudgetRequest(data.Id, data.Comments);
+
+                return Response.AsRedirect("/admin");
+            };
         }
     }
 }

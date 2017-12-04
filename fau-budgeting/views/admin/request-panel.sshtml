@@ -2,7 +2,7 @@
     <div class="list-group">
 
         @Each
-        <a href="/budget-request-info?id=@Current.Id" class="list-group-item">
+        <a href="/budget-request-info/admin?id=@Current.Id" class="list-group-item">
             <p>
                 @Current.Organization.Name
                 <br />

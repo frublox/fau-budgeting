@@ -461,18 +461,21 @@ table.dataTable thead .sorting:after {
     text-align: center;
 }
 
-<<<<<<< HEAD
-.strong{
+.strong {
     font-weight: bold;
 }
 
 .em{
     font-style: italic;
 }
-.u{
+.u {
     text-decoration: underline;
-=======
+}
 .request-type {
     font-style: italic;
->>>>>>> f557b14b852fab47287b488f7614026d74ef6429
+}
+
+.btn {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
