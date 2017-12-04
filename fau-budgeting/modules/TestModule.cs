@@ -10,15 +10,7 @@ namespace fau_budgeting
             // Simple example that returns a string
             Get["/"] = _ => "hi!";
 
-            // Example demonstrating iteration
-            var data = new List<string>
-            {
-                "green",
-                "blue",
-                "purple"
-            };
-
-            Get["/test/data"] = _ => View["data", data];
+            Get["/nav-bar"] = _ => View["/navigation/nav-asab"];
         }
     }
 }
