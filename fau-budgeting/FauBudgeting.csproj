@@ -221,7 +221,6 @@
     <Compile Include="modules\OrganizationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="modules\ReserveFund.cs" />
-    <Compile Include="modules\TestModule.cs" />
     <Compile Include="modules\RevenueFund.cs" />
   </ItemGroup>
   <ItemGroup>
