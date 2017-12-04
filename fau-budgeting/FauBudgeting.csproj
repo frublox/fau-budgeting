@@ -198,6 +198,12 @@
     <None Include="views\navigation\nav-asab.sshtml" />
     <None Include="views\navigation\nav-org.sshtml" />
     <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminDashboardData.cs" />
@@ -233,12 +239,6 @@
     <Content Include="views\display.sshtml" />
     <Content Include="views\forms\OperatingFund.sshtml" />
     <Content Include="views\organization\organization.sshtml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
