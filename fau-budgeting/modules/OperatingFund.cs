@@ -20,6 +20,7 @@ namespace fau_budgeting
         public bool radiobutton4 { get; set; }
         public string title { get; set; }
         public string telephone { get; set; }
+        public string signature { get; set; }
         public string email { get; set; }
         public int salaries { get; set; }
         public int services { get; set; }
@@ -29,40 +30,50 @@ namespace fau_budgeting
         public int overhead { get; set; }
         public int total { get; set; }
 
-        public string smarttag_sal { get; set; }
-        public string accountname_sal { get; set; }
         public string pnumber1 { get; set; }
         public string ptitle1 { get; set; }
         public string fte1 { get; set; }
         public string annualrate1 { get; set; }
+        public bool filled1 { get; set; }
 
         public string pnumber2 { get; set; }
         public string ptitle2 { get; set; }
         public string fte2 { get; set; }
         public string annualrate2 { get; set; }
+        public bool filled2 { get; set; }
 
         public string pnumber3 { get; set; }
         public string ptitle3 { get; set; }
         public string fte3 { get; set; }
         public string annualrate3 { get; set; }
+        public bool filled3 { get; set; }
+
 
         public string pnumber4 { get; set; }
         public string ptitle4 { get; set; }
         public string fte4 { get; set; }
         public string annualrate4 { get; set; }
+        public bool filled4 { get; set; }
+
 
         public string pnumber5 { get; set; }
         public string ptitle5 { get; set; }
         public string fte5 { get; set; }
         public string annualrate5 { get; set; }
+        public bool filled5 { get; set; }
+
 
         public string pnumber6 { get; set; }
         public string ptitle6 { get; set; }
         public string fte6 { get; set; }
         public string annualrate6 { get; set; }
+        public bool filled6 { get; set; }
+
 
         public string pnumber7 { get; set; }
         public string fte7 { get; set; }
+        public bool filled7 { get; set; }
+
 
         public string pnumber8 { get; set; }
         public string ptitle7 { get; set; }
@@ -73,34 +84,44 @@ namespace fau_budgeting
         public string ptitle8 { get; set; }
         public string fte9 { get; set; }
         public string annualrate8 { get; set; }
+        public bool filled8 { get; set; }
+
 
         public string pnumber10 { get; set; }
         public string ptitle9 { get; set; }
         public string fte10 { get; set; }
         public string annualrate9 { get; set; }
+        public bool filled9 { get; set; }
+
 
         public string pnumber11 { get; set; }
         public string ptitle10 { get; set; }
         public string fte11 { get; set; }
         public string annualrate10 { get; set; }
+        public bool filled10 { get; set; }
+
 
         public string pnumber12 { get; set; }
         public string ptitle11 { get; set; }
         public string fte12 { get; set; }
         public string annualrate11 { get; set; }
+        public bool filled11 { get; set; }
+
 
         public string pnumber13 { get; set; }
         public string ptitle12 { get; set; }
         public string fte13 { get; set; }
         public string annualrate12 { get; set; }
+        public bool filled13 { get; set; }
+
 
         public string pnumber14 { get; set; }
         public string fte14 { get; set; }
+        public bool filled14 { get; set; }
+
 
         public int totalsalaries { get; set; }
 
-        public string smarttag_OPS { get; set; }
-        public string accountname_OPS { get; set; }
         public string ptitle1_OPS { get; set; }
         public string other1 { get; set; }
         public int hrate1 { get; set; }
@@ -198,10 +219,7 @@ namespace fau_budgeting
         public int weeks14 { get; set; }
         public int people14 { get; set; }
 
-        public string smarttag_GA { get; set; }
-        public string accountname_GA { get; set; }
-
-        public string ptitle1_GA { get; set; }
+        public string ptitle15_GA { get; set; }
         public  int hrate15 { get; set; }
         public int hours15 { get; set; }
         public int weeks15 { get; set; }
@@ -259,8 +277,7 @@ namespace fau_budgeting
         public int hrate28 { get; set; }
         public int hours28 { get; set; }
         public int weeks28 { get; set; }
-        public string smarttag_EXP { get; set; }
-        public string accountname_EXP { get; set; }
+        
         public string support { get; set; }
         public string food { get; set; }
         public string programs { get; set; }

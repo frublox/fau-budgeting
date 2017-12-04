@@ -477,7 +477,7 @@
                                                             </tr>
                                                             
                                                             <tr> <!--Text Fields--->
-                                                                <td><input name = "ptitle1" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle1_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other1" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate1" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours1" type = "number" class="form-control highlighted_input"></td>
@@ -488,7 +488,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle2" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle2_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other2" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate2" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours2" type = "number" class="form-control highlighted_input"></td>
@@ -499,7 +499,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle3" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle3_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other3" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate3" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours3" type = "number" class="form-control highlighted_input"></td>
@@ -510,7 +510,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle4" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle4_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other4" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate4" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours4" type = "number" class="form-control highlighted_input"></td>
@@ -521,7 +521,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle5" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle5_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other5" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate5" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours5" type = "number" class="form-control highlighted_input"></td>
@@ -532,7 +532,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle6" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle6_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other6" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate6" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours6" type = "number" class="form-control highlighted_input"></td>
@@ -543,7 +543,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle7" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle7_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other7" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate7" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours7" type = "number" class="form-control highlighted_input"></td>
@@ -554,7 +554,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle8" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle8_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other8" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate8" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours8" type = "number" class="form-control highlighted_input"></td>
@@ -565,7 +565,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle9" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle9_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other9" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate9" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours9" type = "number" class="form-control highlighted_input"></td>
@@ -576,7 +576,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle10" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle10_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other10" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate10" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours10" type = "number" class="form-control highlighted_input"></td>
@@ -587,7 +587,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle11" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle11_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other11" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate11" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours11" type = "number" class="form-control highlighted_input"></td>
@@ -598,7 +598,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle12" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle12_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other12" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate12" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours12" type = "number" class="form-control highlighted_input"></td>
@@ -609,7 +609,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle13" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle13_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other13" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate13" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours13" type = "number" class="form-control highlighted_input"></td>
@@ -620,7 +620,7 @@
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle14" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle14_OPS" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "other14" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate14" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours14" type = "number" class="form-control highlighted_input"></td>
@@ -677,98 +677,98 @@
                                                             </tr>
                                                             
                                                             <tr> <!--Text Fields--->
-                                                                <td><input name = "ptitle15" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle15_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate15" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours15" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks15" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input name = "ptitle16" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle16_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate16" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours16" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks16" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle17" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle17_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate17" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours17" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks17" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle18" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle18_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate18" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours18" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks18" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle19" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle19_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate19" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours19" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks19" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle20" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle20_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate20" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours20" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks20" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle21" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle21_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate21" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours21" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks21" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle22" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle22_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate22" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours22" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks22" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle23" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle23_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate23" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours23" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks23" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle24" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle24_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate24" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours24" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks24" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle25" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle25_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate25" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours25" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks25" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle26" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle26_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate26" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours26" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks26" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle27" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle27_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate27" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours27" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks27" type = "number" class="form-control highlighted_input"></td>
                                                                 <td>$0</td>
                                                             </tr>
                                                              <tr>
-                                                                <td><input name = "ptitle28" type = "text" class="form-control highlighted_input"></td>
+                                                                <td><input name = "ptitle28_GA" type = "text" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hrate28" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "hours28" type = "number" class="form-control highlighted_input"></td>
                                                                 <td><input name = "weeks28" type = "number" class="form-control highlighted_input"></td>
