@@ -1,0 +1,39 @@
+﻿<div class="row" name="commentsection" id="commentsection">
+    <form method="post">
+        <input hidden name="requestType" value="@Model.Request.RequestType" />
+        <input hidden name="id" value="@Model.Request.Id" />
+
+        <div class="col-md-3">
+            @If.Resubmit
+            <h4>Comments from ASAB:</h4>
+            <textarea disabled>@Model.Request.Comments</textarea>
+            <input class="btn btn-info" type="submit" formaction="/budget-request-info/edit" value="Edit and Resubmit" />
+            @EndIf
+
+            @If.ShowButton
+            <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
+            <div id="feedback" class="collapse">
+                <h4>Comments:</h4>
+
+                <textarea type="t"
+                          name="comments"
+                          rows="6" cols="60"
+                          form="form"
+                          placeholder="Enter some feedback..."></textarea>
+                <br>
+                <input type="submit"
+                       class="btn btn-info"
+                       name="send"
+                       value="Send feedback"
+                       onsubmit="return confirm('Are you sure?');"
+                       formaction="/budget-request-info/send-back">
+            </div>
+            <input type="submit"
+                   class="btn btn-success"
+                   value="@Model.ButtonText"
+                   onsubmit="return confirm('Are you sure?');"
+                   formaction="/budget-request-info/@Model.Route">
+            @EndIf
+        </div>
+    </form>
+</div>

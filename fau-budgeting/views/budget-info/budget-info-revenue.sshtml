@@ -1,0 +1,16 @@
+﻿@Master['@Model.MasterTemplate']
+
+@Section['Content']
+    <div id="page-wrapper">
+        @Partial['forms/form-revenue.sshtml']
+        @Partial['budget-info/budget-info-actions.sshtml']
+    </div>
+@EndSection
+
+@Section['Scripts']
+    <script src="/js/budget-info.js"></script>
+    <script>
+        displayBudgetInfo(@Model.Request.Id);
+        disableEditing();
+    </script>
+@EndSection

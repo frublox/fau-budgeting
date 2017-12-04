@@ -122,6 +122,8 @@ namespace fau_budgeting
 		
 		private string _RequestData;
 		
+		private string _Comments;
+		
 		private EntityRef<Organization> _Organization;
 		
     #region Extensibility Method Definitions
@@ -140,6 +142,8 @@ namespace fau_budgeting
     partial void OnOrganizationIdChanged();
     partial void OnRequestDataChanging(string value);
     partial void OnRequestDataChanged();
+    partial void OnCommentsChanging(string value);
+    partial void OnCommentsChanged();
     #endregion
 		
 		public BudgetRequest()
@@ -268,6 +272,26 @@ namespace fau_budgeting
 					this._RequestData = value;
 					this.SendPropertyChanged("RequestData");
 					this.OnRequestDataChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Comments")]
+		public string Comments
+		{
+			get
+			{
+				return this._Comments;
+			}
+			set
+			{
+				if ((this._Comments != value))
+				{
+					this.OnCommentsChanging(value);
+					this.SendPropertyChanging();
+					this._Comments = value;
+					this.SendPropertyChanged("Comments");
+					this.OnCommentsChanged();
 				}
 			}
 		}

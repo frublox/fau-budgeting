@@ -196,16 +196,22 @@ Budget Request Info
                 </form>
                 <!-- /.Form 1-->
                 <!---Feedback Form-->
-                <form action="URL to form script" method="POST">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>Comments:</h4>
-                            <textarea name="comments" rows="6" cols="140"></textarea><br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>Comments:</h4>
+                        
+
+                        <form action="/accept-budget-request" method="post">
                             <input type="button" value="Accept">
+                        </form>
+                        
+                        <form action="/send-back-budget-request" method="post">
                             <input type="button" value="Provide Feedback">
-                        </div>
+                            <textarea name="comments" rows="6" cols="140"></textarea><br>
+                        </form>
+                        
                     </div>
-                </form>    
+                </div>
                 <!--/. Feedback Form--->
             </div>
             <!--/.container-fluid -->

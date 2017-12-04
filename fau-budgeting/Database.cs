@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 
 namespace fau_budgeting
 {
@@ -76,6 +77,117 @@ namespace fau_budgeting
                 select user;
 
             return query.FirstOrDefault();
+        }
+
+        public static BudgetRequest GetBudgetRequest(int id)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            return query.ToList().FirstOrDefault();
+        }
+
+        public static void AcceptBudgetRequest(int id)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            foreach (BudgetRequest request in query)
+            {
+                request.Status = "Accepted";
+            }
+
+            db.SubmitChanges();
+        }
+
+        public static void SendBackBudgetRequest(int id, string comments)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            foreach (BudgetRequest request in query)
+            {
+                request.Status = "Awaiting Resubmission";
+                request.Comments = comments;
+            }
+
+            db.SubmitChanges();
+        }
+
+        public static void ResubmitBudgetRequest(int id, string requestData)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            foreach (BudgetRequest request in query)
+            {
+                request.Status = "New";
+                request.RequestData = requestData;
+            }
+
+            db.SubmitChanges();
+        }
+
+        public static void CreateBudgetRequest(BudgetRequest budgetRequest)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            
+            if (BudgetRequestExists(budgetRequest.Id))
+            {
+                var query =
+                    from request in db.BudgetRequests
+                    where request.Id == budgetRequest.Id
+                    select request;
+
+                foreach (var request in query)
+                {
+                    db.BudgetRequests.DeleteOnSubmit(request);
+                }
+            }
+
+            db.BudgetRequests.InsertOnSubmit(budgetRequest);
+
+            db.SubmitChanges();
+        }
+
+        public static bool BudgetRequestExists(int id)
+        {
+            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+
+            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            return query.ToList().Count > 0;
         }
     }
 }
