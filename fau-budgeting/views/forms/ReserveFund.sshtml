@@ -6,7 +6,11 @@
 
 @Section['Content']
 
-<div id="page-wrapper">
+   <!-- Form 2 -->
+        <form name="form2" id="form2" action="/reserve-fund-submit" target="hidden" method="post" enctype="multipart/form-data">
+        <!--MY CODE IS HERE-->
+        <!-- Page Content -->
+        <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Reserve Fund Request Form</h1>
@@ -17,6 +21,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
                                  <li class="active">
@@ -26,17 +31,37 @@
                                     <a href="#supplemental" data-toggle="tab">Supplemental Form - Reserve</a>
                                 </li>
                             </ul>
+                            <!---/. Nav tabs--->
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                    
+                                      
+                                <!--required fields-->
+                                 <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="25%">SmartTag:</td>
+                                                    <td colspan="4"><input class="form-control highlighted_input" name="res_fund_supp_smarttag" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="25%">Account Name:</td>
+                                                    <td colspan="4"><input class="form-control highlighted_input" name="res_fund_supp_account_name" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="25%">Fund:</td>
+                                                    <td colspan="4">Student Government Reserve</td>
+                                                </tr>
+                                            </tbody>
+                                         </table>
+                                    </div>
+                                
                                 <!--Reserve Fund Summary & Detail-->
                                 <div class="tab-pane fade in active" id="summary">  
-                                <!-- Form 1 -->
-                                <form name="form1" id="form1" action="../php/formdata.php" target="hidden" method="post" enctype="multipart/form-data">
+        
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <p style="text-align: center">
+                                            <p style="text-align: center" class="strong">
                                                 ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM <br>
                                                 RESERVE FUND SUMMARY AND DETAIL 
                                                 <br>
@@ -49,23 +74,6 @@
                                             <div class="table-responsive">
                                                 <table class="table table-hover">
                                                     <tbody>
-                                                        <tr>
-                                                            <td width="25%">SmartTag:</td>
-                                                            <td colspan="3"><input type="text" name="smarttag" class="form-control highlighted_input"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="25%">Account Name:</td>
-                                                            <td colspan="3"><input type="text" name="accountname" class="form-control highlighted_input"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="25%">Fund:</td>
-                                                            <td colspan="3">Student Government Reserve</td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td colspan="4"></td>
-                                                        </tr>
-                                                        
                                                         <tr>
                                                             <td width="50%"><strong>TRANSFER IN</strong></td>
                                                             <td width="50%"><strong>2018-2019 Request Budget</strong></td>
@@ -216,33 +224,27 @@
                                                         <tr class="form-group">
                                                             <td colspan="4">
                                                             <label>Please provide detailed supplemental schedules in support of the expenses</label>
-                                                            <input type="file" accept="application/pdf">
+                                                            <input name = "reserve_files" type="file" accept="application/pdf">
                                                             </td>    
                                                         </tr>
-                                                        <tr>
-                                                                <td colspan="4" style="text-align: right"><input type="submit" value="Submit" name="submit"></td>
-                                                        </tr>
                                                     </tbody>
+                                                    <!----/. tbody---->
                                                 </table>
+                                                <!--/. table--->
                                             </div>
-                                            <!-- End Table Placement -->
                                             <!-- /.table-responsive -->
                                         </div>
                                         <!-- /.panel-body -->
                                     </div>
                                     <!-- /.panel-default -->
-                                    </form>
-                                    <!-- /.Form 1-->
                                 </div>
                                 <!--/. Reserve Fund Summary & Detail-->
                                   
                                 <!-- Supplemental Form - Reserve Tab -->
-                                <div class="tab-pane fade" id="supplemental">
-                                <!-- Form 2 -->
-                                <form name="form2" id="form2" action="http://formdata.php" method="post" enctype="multipart/form-data">   
+                                <div class="tab-pane fade" id="supplemental"> 
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <p style="text-align: center">
+                                            <p style="text-align: center" class="strong">
                                                  A&S SUPPLEMENTAL BUDGET
                                                 <br>REQUEST DOCUMENTATION
                                                 <br>2018-2019
@@ -255,36 +257,19 @@
                                                 <table class="table table-hover">
                                                         <tbody>
                                                             <tr>
-                                                                <td width="50%">SmartTag:</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50%">Account Name:</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50%">Fund:</td>
-                                                                <td colspan="3">Student Government Reserve</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td colspan="3"></td>
-                                                            </tr>
-                                                            
-                                                            <tr>
                                                                 <td width="25%"><strong>Category</strong></td>
                                                                 <td width="25%"><strong>2017-2018 Approved Budget</strong></td>
                                                                 <td width="25%"><strong>2018-2019 Budget Request</strong></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Transfers In</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_transfers_in_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_transfers_in_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%"><strong>TOTAL TRANSFER IN</strong></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_total_transfer_in_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_total_transfer_in_request"></td>
                                                             </tr>
                                                             
                                                             <tr>
@@ -293,23 +278,23 @@
                                                             
                                                             <tr>
                                                                 <td width="25%">Expenses</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_expenses_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_expenses_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Transfers Out</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_transfers_out_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_transfers_out_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">2.8% Overhead</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_overhead_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_overhead_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%"><strong>TOTAL EXPENSE</strong></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_total_exp_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_total_exp_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -317,7 +302,7 @@
                                                             <tr>
                                                                 <td width="25%">Transfers In</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_transfer_in_requested"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -326,7 +311,7 @@
                                                                 <td width="25%"><strong>Justification:</strong></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="res_fund_supp_transfer_in_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -343,23 +328,23 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Equipment</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_equipment_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Improvements</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_improvements_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Contingencies</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_contingencies_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Other(if applicable)</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_other_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Total</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_total_budget"></td>
                                                             </tr>
                                                             
                                                             <tr>
@@ -373,10 +358,10 @@
                                                             <tr>
                                                                 <td width="25%"><strong>Equipment:</strong></td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_equipment_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="res_fund_supp_equipment_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -384,10 +369,10 @@
                                                             <tr>
                                                                 <td width="25%"><strong>Improvements:</strong></td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_improvements_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="res_fund_supp_improvements_justification"></textarea></td>
 
                                                             </tr>
                                                             <tr>
@@ -396,10 +381,10 @@
                                                             <tr>
                                                                 <td width="25%"><strong>Contingencies:</strong></td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_contingencies_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="res_fund_supp_contingencies_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -407,10 +392,10 @@
                                                             <tr>
                                                                 <td width="25%"><strong>Other(if applicable)</strong></td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_other_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="res_fund_supp_other_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -418,63 +403,64 @@
                                                             <tr>
                                                                 <td width="25%"><strong>Transfer Out</strong></td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="res_fund_supp_transfer_out_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="res_fund_supp_transfer_out_justification"></textarea>
                                                                 </td>
                                                             </tr>   
-                                                            <tr>
-                                                                <td colspan="4" style="text-align: right"><input type="submit" value="Submit" name="submit"></td>
-                                                            </tr>
                                                     </tbody>
+                                                    <!--/. tbody-->
                                                 </table>
+                                                <!---/. table-->
                                             </div>    
                                                 <!--/. table-responsive -->
                                         </div>
                                         <!-- /. panel-body -->
                                     </div>
                                     <!--/. panel-default -->
-                                
-                                        </form>
-                                <!-- /.Form 2-->
-                                    </div>
+                                </div>
                                 <!-- /. Supplemental Form - Reserve Tab -->
                             </div>
                             <!-- /.Tab panes -->
                         </div>
                         <!-- /.panel-body -->
-                    </div>
-
-					<!-- Submit Button-->
+                        
+                        <!-- Submit Button-->
                         <div class="submit">
                             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                         </div>
                         <!--/. Submit Button--->
-
+                        
+                    </div>
                     <!-- /.panel -->
                 </div>
                 <!-- /.col-lg-6 -->
             </div>
         </div>
-		</form>
-		@EndSection
+        <!-- /#page-wrapper -->
+        </form>
+        <!--/. Form 2-->
+        <!--END OF MY CODE-->
+        <!---Scroll to top-->
+        <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
+        <!---/. Scroll to top-->
+    </div>
+    <!-- /#wrapper -->
+
+@EndSection
 
 @Section['Scripts']
-    <script src="/dist/js/sb-admin-2.js"></script>
-	<!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!--Confirmation Script--->
+    <script>
+    document.getElementById("form2").onsubmit=function(){confirmation()}
     
-     <!--AJAX-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    function confirmation() {
+            alert("Are you sure you want to submit this form?");
+    }
+    </script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
+	<!-- Custom Theme JavaScript -->
     <script src="../js/scroll-top.js"></script>
     <script src="../dist/js/sb-admin-2.js"></script>
 	
@@ -488,8 +474,6 @@
     </script>
 @EndSection
 
-@Section['Styles']
-    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
-@EndSection
+
 
 

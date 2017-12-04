@@ -1,4 +1,4 @@
-﻿@Master['master.sshtml']
+﻿@Master['master-org.sshtml']
 
 @Section['Title']
 	Revenue Fund Request
@@ -6,7 +6,9 @@
 
 @Section['Content']
 
-<!--MY CODE IS HERE-->
+<!-- Form 1 -->
+        <form name="form1" id="form1" action="/revenue-fund-submit" target="hidden" method="post" enctype="multipart/form-data">
+        <!--MY CODE IS HERE-->
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="row">
@@ -19,6 +21,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
                                  <li class="active">
@@ -31,15 +34,36 @@
                                     <a href="#supplemental" data-toggle="tab">Supplemental Form - Revenue</a>
                                 </li>
                             </ul>
+                            <!---/.Nav tabs--->
 
                             <!-- Tab panes -->
                             <div class="tab-content">
+                            
+                                <!--required fields-->
+                                 <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="25%">SmartTag:</td>
+                                                    <td colspan="4"><input class="form-control highlighted_input" name="rev_fund_ops_smarttag" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="25%">Account Name:</td>
+                                                    <td colspan="4"><input class="form-control highlighted_input" name="rev_fund_ops_account_name" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="25%">Fund:</td>
+                                                    <td colspan="4">Student Government Revenue</td>
+                                                </tr>
+                                            </tbody>
+                                         </table>
+                                    </div>
                                 
                                 <!--Revenue Fund Summary & Detail-->
                                 <div class="tab-pane fade in active" id="summary">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <p style="text-align: center">
+                                            <p style="text-align: center" class="strong">
                                                 ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM <br>
                                                 REVENUE FUND SUMMARY AND DETAIL 
                                                 <br>
@@ -53,77 +77,58 @@
                                                 <table class="table table-hover">
                                                     <tbody>
                                                         <tr>
-                                                            <td width="25%">SmartTag:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
+                                                            <td width="50%" class="strong">REVENUES FROM REVENUE GENERATING EVENTS/SERVICES</td>
+                                                            <td width="50%" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td width="25%">Account Name:</td>
-                                                            <td colspan="3"><input class="form-control highlighted_input"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="25%">Fund:</td>
-                                                            <td colspan="3">Student Government Revenue</td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td colspan="4"></td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td width="50%"><strong>REVENUES FROM REVENUE GENERATING EVENTS/SERVICES</strong></td>
-                                                            <td width="50%"><strong>2018-2019 Request Budget</strong></td>
-                                                        </tr>
-                                                        
                                                         <tr>
                                                             <td colspan="4">Revenue Source:</td>
                                                         </tr>
-                                                        
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_generating_event_1">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_generating_event_request_1">
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_generating_event_2">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
-                                                            </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_generating_event_request_2">
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_generating_event_3">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
-                                                            </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_generating_event_request_3">
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_generating_event_4">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_generating_event_request_4">
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_generating_event_5">
+                                                            </td>
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_generating_event_request_5">
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_generating_event_6">
+                                                            </td>
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_generating_event_request_6">
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
                                                             <td width="50%">Total Revenues
                                                             </td>
-                                                            <td width="50%">$0</td>
+                                                            <td width="50%" name="rev_fund_generating_event_total_rev">$0</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -131,36 +136,34 @@
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><strong>TRANSFERS IN</strong>
-                                                            </td>
-                                                             <td width="50%"><strong>2018-2019 Request Budget</strong>
-                                                            </td>
+                                                            <td width="50%" class="strong">TRANSFERS IN</td>
+                                                             <td width="50%" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
                                                         
                                                         <tr>
                                                             <td colspan="4">Transfers In To TAG(s):</td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_transfers_in_1">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
-                                                            </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_transfers_in_request_1">
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_transfers_in_2">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_transfers_in_request_2">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_transfers_in_3">
+                                                            </td>
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_transfers_in_request_3">
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Transfer In</td>
-                                                            <td width="50%">$0</td>
+                                                            <td width="50%" name="rev_fund_total_transfers_in">$0</td>
                                                         </tr>  
                                                         
                                                         <tr>
@@ -168,13 +171,13 @@
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><strong>OPS FOR REVENUE GENERATING EVENTS/SERVICES</strong></td>
-                                                            <td colspan="2"><strong>2018-2019 Request Budget</strong></td>
+                                                            <td width="50%" class="strong">OPS FOR REVENUE GENERATING EVENTS/SERVICES</td>
+                                                            <td colspan="2" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
                                                         
                                                         <tr>
                                                             <td width="50%">TOTAL OPS Costs per Revenue Fund OPS</td>
-                                                            <td colspan="2" >$0</td>
+                                                            <td colspan="2" name="rev_fund_total_ops_request">$0</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -182,59 +185,57 @@
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><strong>EXPENSES FOR REVENUE GENERATING EVENTS/SERVICES</strong>
-                                                            </td>
-                                                             <td width="50%"><strong>2018-2019 Request Budget</strong>
-                                                            </td>
+                                                            <td width="50%" class="strong">EXPENSES FOR REVENUE GENERATING EVENTS/SERVICES</td>
+                                                             <td width="50%" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Support Services</td>
-                                                            <td colspan="2"><input class="form-control highlighted_input" placeholder="$"></td>
+                                                            <td colspan="2"><input class="form-control highlighted_input" placeholder="$" name="rev_fund_support_request"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%">FoodImprovements</td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
+                                                            <td width="50%">Food Improvements</td>
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_food_request">
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Programs and Services</td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_programs_request">
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
                                                             <td width="50%">Travel</td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_travel_request">
                                                             </td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_services_1">
                                                             </td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
-                                                            </td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
-                                                            </td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_services_request_1">
                                                             </td>
                                                         </tr>
                                                          <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_services_2">
                                                             </td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_services_request_2">
                                                             </td>
                                                         </tr>
                                                          <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_services_3">
                                                             </td>
-                                                            <td colspan="2"><input class="form-control highlighted_input">
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_services_request_3">
+                                                            </td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_services_4">
+                                                            </td>
+                                                            <td colspan="2"><input class="form-control highlighted_input" name="rev_fund_services_request_4">
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Expenses</td>
-                                                            <td colspan="2" >$0</td>
+                                                            <td colspan="2" name="rev_fund_services_total_expenses">$0</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -243,12 +244,12 @@
                                                         
                                                          <tr>
                                                             <td width="50%"></td>
-                                                            <td colspan="2"><strong>2018-2019 Request Budget</strong></td>
+                                                            <td colspan="2" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
                                                         
                                                         <tr>
                                                             <td width="50%">2.8% Overhead</td>
-                                                            <td colspan="2" >$0</td>
+                                                            <td colspan="2" name="rev_fund_overhead">$0</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -256,33 +257,33 @@
                                                         </tr> 
                                                         
                                                         <tr>
-                                                            <td width="50%"><strong>TRANSFER OUT</strong></td>
-                                                            <td width="50%"><strong>2018-2019 Request Budget</strong></td>
+                                                            <td width="50%" class="strong">TRANSFER OUT</td>
+                                                            <td width="50%" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="4">Transfers Out To TAG(s):</td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_transfer_out_1">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input" placeholder="$">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
-                                                            </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" placeholder="$" name="rev_fund_transfer_out_request_1">
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td width="50%"><input class="form-control highlighted_input">
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_transfer_out_2">
                                                             </td>
-                                                            <td colspan="3"><input class="form-control highlighted_input">
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_transfer_out_request_2">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%"><input class="form-control highlighted_input" name="rev_fund_transfer_out_3">
+                                                            </td>
+                                                            <td colspan="3"><input class="form-control highlighted_input" name="rev_fund_transfer_out_request_3">
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Transfer Out</td>
-                                                            <td width="50%">$0</td>
+                                                            <td width="50%" name="rev_fund_total_transfer_out">$0</td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="4"></td>
@@ -290,12 +291,12 @@
                                                         
                                                          <tr>
                                                             <td width="50%"></td>
-                                                            <td colspan="2"><strong>2018-2019 Request Budget</strong></td>
+                                                            <td colspan="2" class="strong">2018-2019 Request Budget</td>
                                                         </tr>
                                                         
                                                         <tr>
                                                             <td width="50%">Net Revenue/ (Expense)</td>
-                                                            <td colspan="2" >$0</td>
+                                                            <td colspan="2" name="rev_fund_net_rev">$0</td>
                                                         </tr>
                                                         
                                                         <tr>
@@ -305,22 +306,20 @@
                                                         <tr class="form-group">
                                                             <td colspan="4">
                                                             <label>Please provide detailed supplemental schedules in support of the revenue generating activities and expenses</label>
-                                                            <input type="file">
+                                                            <input name = "rev_files" type="file" accept="application/pdf">
                                                             </td>    
                                                         </tr>
                                                         
                                                     </tbody>
+                                                    <!---tbody-->
                                                 </table>
+                                                <!---/.table-->
                                             </div>
-                                            <!-- End Table Placement -->
                                             <!-- /.table-responsive -->
                                         </div>
                                         <!-- /.panel-body -->
                                     </div>
-                                    <!-- /.panel -->
-                                    <div style="text-align: right;">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </div>
+                                    <!-- /.panel-default -->
                                 </div>
                                 <!--/. Revenue Fund Summary & Detail-->
                                 
@@ -328,7 +327,7 @@
                                 <div class="tab-pane fade" id="ops">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <p style="text-align: center">
+                                            <p style="text-align: center" class="strong">
                                                 ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM<br>
                                                 Revenue FUND - OTHER PERSONNEL SERVICES <br> 
                                                 FOR THE FISCAL YEAR ENDING June 30, 2019
@@ -340,26 +339,8 @@
                                                     <table class="table table-hover">
                                                         <tbody>
                                                             <tr>
-                                                                <td width="25%">SmartTag:</td>
-                                                                <td colspan="9"><input class="form-control highlighted_input"></td>
+                                                                <td colspan="9" style="text-align: center" class="strong">2018-2019 Budget Request</td>
                                                             </tr>
-                                                            <tr>
-                                                                <td width="25%">Account Name:</td>
-                                                                <td colspan="9"><input class="form-control highlighted_input"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="25%">Fund:</td>
-                                                                <td colspan="9">Student Government Revenue</td>
-                                                            </tr>
-                                                                
-                                                            <tr>
-                                                                <td colspan="9"></td>
-                                                            </tr>
-                                                            
-                                                            <tr>
-                                                                <td colspan="9" style="text-align: center"><strong>2018-2019 Budget Request</strong></td>
-                                                            </tr>
-                                                            
                                                             <tr>
                                                                 <td>Position Title</td>
                                                                 <td>Enter 1, if not <br> Fau Student</td>
@@ -373,183 +354,179 @@
                                                             </tr>
                                                             
                                                             <tr> <!--Text Fields--->
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_1"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_1"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_1"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_1"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_1"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_1"></td>
+                                                                <td name="rev_fund_ops_wages_1">0</td>
+                                                                <td name="rev_fund_ops_costs_1">0</td>
+                                                                <td name="rev_fund_ops_total_costs_1">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_2"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_2"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_2"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_2"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_2"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_2"></td>
+                                                                <td name="rev_fund_ops_wages_2">0</td>
+                                                                <td name="rev_fund_ops_costs_2">0</td>
+                                                                <td name="rev_fund_ops_total_costs_2">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_3"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_3"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_3"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_3"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_3"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_3"></td>
+                                                                <td name="rev_fund_ops_wages_3">0</td>
+                                                                <td name="rev_fund_ops_costs_3">0</td>
+                                                                <td name="rev_fund_ops_total_costs_3">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_4"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_4"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_4"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_4"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_4"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_4"></td>
+                                                                <td name="rev_fund_ops_wages_4">0</td>
+                                                                <td name="rev_fund_ops_costs_4">0</td>
+                                                                <td name="rev_fund_ops_total_costs_4">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_5"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_5"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_5"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_5"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_5"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_5"></td>
+                                                                <td name="rev_fund_ops_wages_5">0</td>
+                                                                <td name="rev_fund_ops_costs_5">0</td>
+                                                                <td name="rev_fund_ops_total_costs_5">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_6"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_6"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_6"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_6"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_6"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_6"></td>
+                                                                <td name="rev_fund_ops_wages_6">0</td>
+                                                                <td name="rev_fund_ops_costs_6">0</td>
+                                                                <td name="rev_fund_ops_total_costs_6">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_7"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_7"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_7"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_7"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_7"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_7"></td>
+                                                                <td name="rev_fund_ops_wages_7">0</td>
+                                                                <td name="rev_fund_ops_costs_7">0</td>
+                                                                <td name="rev_fund_ops_total_costs_7">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_8"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_8"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_8"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_8"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_8"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_8"></td>
+                                                                <td name="rev_fund_ops_wages_8">0</td>
+                                                                <td name="rev_fund_ops_costs_8">0</td>
+                                                                <td name="rev_fund_ops_total_costs_8">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_9"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_9"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_9"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_9"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_9"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_9"></td>
+                                                                <td name="rev_fund_ops_wages_9">0</td>
+                                                                <td name="rev_fund_ops_costs_9">0</td>
+                                                                <td name="rev_fund_ops_total_costs_9">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_10"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_10"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_10"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_10"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_10"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_10"></td>
+                                                                <td name="rev_fund_ops_wages_10">0</td>
+                                                                <td name="rev_fund_ops_costs_10">0</td>
+                                                                <td name="rev_fund_ops_total_costs_10">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_11"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_11"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_11"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_11"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_11"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_11"></td>
+                                                                <td name="rev_fund_ops_wages_11">0</td>
+                                                                <td name="rev_fund_ops_costs_11">0</td>
+                                                                <td name="rev_fund_ops_total_costs_11">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_12"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_12"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_12"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_12"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_12"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_12"></td>
+                                                                <td name="rev_fund_ops_wages_12">0</td>
+                                                                <td name="rev_fund_ops_costs_12">0</td>
+                                                                <td name="rev_fund_ops_total_costs_12">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_13"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_13"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_13"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_13"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_13"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_13"></td>
+                                                                <td name="rev_fund_ops_wages_13">0</td>
+                                                                <td name="rev_fund_ops_costs_13">0</td>
+                                                                <td name="rev_fund_ops_total_costs_13">$0</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td><input class="form-control highlighted_input"></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_position_14"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_title_14"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_rate_14"></td>
+                                                                <td><input class="form-control highlighted_input"  name="rev_fund_ops_hours_14"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_weeks_14"></td>
+                                                                <td><input class="form-control highlighted_input" name="rev_fund_ops_people_14"></td>
+                                                                <td name="rev_fund_ops_wages_14">0</td>
+                                                                <td name="rev_fund_ops_costs_14">0</td>
+                                                                <td name="rev_fund_ops_total_costs_14">$0</td>
                                                             </tr> <!-- /.Text Fields--->
                                                             
                                                             <tr>
-                                                                <td colspan="6"><strong>TOTAL OPS </strong></td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                                <td>$0</td>
+                                                                <td colspan="6" class="strong">TOTAL OPS</td>
+                                                                <td name="rev_fund_total_ops_wages">0</td>
+                                                                <td name="rev_fund_total_ops_costs">0</td>
+                                                                <td name="rev_fund_total_ops_total_costs">$0</td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="9">(This Total Carries to Summary Page)</td>
                                                             </tr>
                                                         </tbody>
+                                                        <!---/. tbody--->
                                                     </table>
                                                     <!-- /. table-->
                                                 </div>
                                                 <!-- /.table-responsive -->
                                             </div>
                                             <!--/. panel-body-->
-                
                                     </div> 
                                     <!-- /. panel-default--->
-                                    
-                                        <div style="text-align: right;">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
                                 </div>    
                                 <!-- /. Revenue Fund OPS Tab-->
       
@@ -557,7 +534,7 @@
                                 <div class="tab-pane fade" id="supplemental">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <p style="text-align: center">
+                                            <p style="text-align: center" class="strong">
                                                 A&S SUPPLEMENTAL BUDGET
                                                 <br>REQUEST DOCUMENTATION
                                                 <br>2018-2019
@@ -570,41 +547,27 @@
                                                 <table class="table table-hover">
                                                         <tbody>
                                                             <tr>
-                                                                <td width="50%">SmartTag:</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50%">Account Name:</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50%">Fund:</td>
-                                                                <td colspan="3">Student Government Revenue</td>
-                                                            </tr>
-
-                                                            <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
-                                                            
                                                             <tr>
-                                                                <td width="25%"><strong>Category</strong></td>
-                                                                <td width="25%"><strong>2017-2018 Approved Budget</strong></td>
-                                                                <td width="25%"><strong>2018-2019 Budget Request</strong></td>
+                                                                <td width="25%" class="strong">Category</td>
+                                                                <td width="25%" class="strong">2017-2018 Approved Budget</td>
+                                                                <td width="25%" class="strong">2018-2019 Budget Request</td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Revenue</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_rev_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_rev_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Transfers In</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_transfers_in_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_transfers_in_request"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>TOTAL REVENUE & TRANSFER IN</strong></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%" class="strong">TOTAL REVENUE & TRANSFER IN</td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_total_transfer_in_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_total_transfer_in_request"></td>
                                                             </tr>
                                                             
                                                             <tr>
@@ -613,29 +576,29 @@
                                                             
                                                             <tr>
                                                                 <td width="25%">OPS</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_ops_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_ops_request"></td>
                                                             </tr>
                                                             
                                                             <tr>
                                                                 <td width="25%">Expenses</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_expenses_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_expenses_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Transfers Out</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_transfers_out_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_transfers_out_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">2.8% Overhead</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_overhead_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_overhead_request"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>TOTAL EXPENSE</strong></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%" class="strong">TOTAL EXPENSE</td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_total_exp_approved"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_total_exp_request"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
@@ -643,162 +606,164 @@
                                                             <tr>
                                                                 <td width="25%">Revenue</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_rev_requested"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Justification:</strong></td>
+                                                                <td width="25%" class="strong">Justification:</td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_rev_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Transfer In</strong></td>
+                                                                <td width="25%" class="strong">Transfer In</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_transfer_in_requested"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Justification:</strong></td>
+                                                                <td width="25%" class="strong">Justification:</td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_transfer_in_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Other Personnel Services(OPS)</strong></td>
+                                                                <td width="25%" class="strong">Other Personnel Services(OPS)</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_ops_requested"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Justification:</strong></td>
+                                                                <td width="25%" class="strong">Justification:</td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_ops_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Expenses</strong></td>
+                                                                <td width="25%" class="strong">Expenses</td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><em>(Individually list each spend category requested.  Show the unit cost of each item, number needed, and total amount.  Provide justification for each item and relate it to specific project objectives.  If appropriate, certain items may be shown by an estimated amount per year times the number of direct staff in the budget category.)</em></td>		
+                                                                <td colspan="3" class="em">(Individually list each spend category requested.  Show the unit cost of each item, number needed, and total amount.  Provide justification for each item and relate it to specific project objectives.  If appropriate, certain items may be shown by an estimated amount per year times the number of direct staff in the budget category.)</td>		
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%" style="text-align: center;"><strong>Description</strong></td>
-                                                                <td colspan="3" style="text-align: center;"><strong>2018-2019 Requested Budget</strong></td>
+                                                                <td width="25%" style="text-align: center" class="strong">Description</td>
+                                                                <td colspan="3" style="text-align: center" class="strong">2018-2019 Requested Budget</td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Support Services</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_support_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Food Services</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_food_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Programs and Services</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_services_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Travel</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_travel_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Other(if applicable)</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_other_budget"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="25%">Total</td>
-                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td colspan="3"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_total_budget"></td>
                                                             </tr>
                                                             
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>    
                                                             <tr>
-                                                                <td width="25%"><strong><u>Justification</u></strong></td>
+                                                                <td width="25%" class="strong u">Justification</td>
                                                             </tr>
 
                                                             <tr>
-                                                                <td width="25%"><strong>Support Services:</strong></td>
+                                                                <td width="25%" class="strong">Support Services:</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_support_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_support_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Food Services:</strong></td>
+                                                                <td width="25%" class="strong">Food Services:</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_food_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_food_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Program and Services:</strong></td>
+                                                                <td width="25%" class="strong">Program and Services:</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_services_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_services_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Travel:</strong></td>
+                                                                <td width="25%" class="strong">Travel:</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_travel_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_travel_justification"></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Other(if applicable)</strong></td>
+                                                                <td width="25%" class="strong">Other(if applicable)</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_other_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea></td> 
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_other_justification"></textarea></td> 
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td width="25%"><strong>Transfer Out</strong></td>
+                                                                <td width="25%" class="strong">Transfer Out</td>
                                                                 <td width="25%">Amount Requested</td>
-                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0"></td>
+                                                                <td width="25%"><input class="form-control highlighted_input" placeholder="$0" name="rev_fund_supp_transfer_out_requested"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td colspan="3"><textarea class="form-control" rows="6"></textarea>
+                                                                <td colspan="3"><textarea class="form-control" rows="6" name="rev_fund_supp_transfer_out_justification"></textarea>
                                                                 </td>
                                                             </tr>    
                                                         </tbody>
+                                                    <!--/. tbody-->
                                                 </table>
+                                                <!---/.table--->
                                             </div>    
                                                 <!--/. table-responsive -->
                                         </div>
@@ -810,40 +775,45 @@
                     
                             </div>
                             <!-- /. Tab panes -->
-                            
                         </div>
                         <!-- /.panel-body -->
                         
+                        <!-- Submit Button-->
+                        <div class="submit">
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <!--/. Submit Button--->
+                        
                     </div>
-                    <!-- /.panel -->
-                    
+                    <!-- /.panel --> 
                 </div>
-                <!-- /.col-lg-6 -->
-                
+                <!-- /.col-lg-6 --> 
             </div>
+            <!---/.row--->
         </div>
         <!-- /#page-wrapper -->
-        
         <!--END OF MY CODE-->
-
-
+        </form>
+        <!--/. Form 1--->
+        <!---Scroll to top-->
+        <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
+        <!---/. Scroll to top-->
+    </div>
+    <!-- /#wrapper -->
     
 
 @EndSection
 
 @Section['Scripts']
     <script src="/dist/js/sb-admin-2.js"></script>
-	<script src="/js/scroll-top.js"></script>
-	<!--Confirmation Script--->
+	  <script src="/js/scroll-top.js"></script>
+	  <!--Confirmation Script--->
     <script>
-    document.getElementById("form1").onsubmit=function(){confirmation()}
-    
-    function confirmation() {
+        document.getElementById("form1").onsubmit=function(){confirmation()}
+
+        function confirmation() {
             alert("Are you sure you want to submit this form?");
-    }
+        }
     </script>
 @EndSection
 
-@Section['Styles']
-    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
-@EndSection

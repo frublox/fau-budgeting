@@ -1,6 +1,10 @@
 ﻿using Nancy;
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 
 
 
@@ -130,7 +134,7 @@ namespace fau_budgeting
         public string rev_fund_ops_title_12 { get; set; }
         public int rev_fund_ops_rate_12 { get; set; }
         public int rev_fund_ops_hours_12 { get; set; }
-        public int rev_fund_ops_weeks_12{ get; set; }
+        public int rev_fund_ops_weeks_12 { get; set; }
         public int rev_fund_ops_people_12 { get; set; }
 
         public string rev_fund_ops_position_13 { get; set; }
@@ -144,7 +148,7 @@ namespace fau_budgeting
         public string rev_fund_ops_title_14 { get; set; }
         public int rev_fund_ops_rate_14 { get; set; }
         public int rev_fund_ops_hours_14 { get; set; }
-        public int rev_fund_ops_weeks_14{ get; set; }
+        public int rev_fund_ops_weeks_14 { get; set; }
         public int rev_fund_ops_people_14 { get; set; }
 
         public string rev_fund_supp_smarttag { get; set; }
@@ -158,7 +162,7 @@ namespace fau_budgeting
         public string rev_fund_supp_ops_approved { get; set; }
         public string rev_fund_supp_ops_request { get; set; }
         public string rev_fund_supp_expenses_approved { get; set; }
-        public string rev_fund_supp_expenses_request { get; set; } 
+        public string rev_fund_supp_expenses_request { get; set; }
         public string rev_fund_supp_transfers_out_approved { get; set; }
         public string rev_fund_supp_transfers_out_request { get; set; }
         public string rev_fund_supp_overhead_approved { get; set; }
@@ -188,21 +192,55 @@ namespace fau_budgeting
         public string rev_fund_supp_other_justification { get; set; }
         public int rev_fund_supp_transfer_out_requested { get; set; }
         public string rev_fund_supp_transfer_out_justification { get; set; }
-    }
 
-    public class RevenueFund : NancyModule
-    {
-        public RevenueFund()
+
+
+        public class RevenueFund : NancyModule
         {
-            Get["/revenue-fund"] = _ => View["RevenueFund"];
-
-            Post["/revenue-fund-submit"] = _ =>
+            public RevenueFund()
             {
-                Revenue_Request request = this.Bind<Revenue_Request>();
-                var json = new JavaScriptSerializer().Serialize(request);
+                Get["/revenue-fund"] = _ => View["forms/RevenueFund"];
 
-                return View["RevenueFund"];
-            };
+                Post["/revenue-fund-submit"] = _ =>
+                {
+                    //binds fields from form
+                    Revenue_Request request = this.Bind<Revenue_Request>();
+
+                    //converts to a string
+                    var json = new JavaScriptSerializer().Serialize(request);
+
+                    //connects to DB
+                    string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+                    BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+                    //
+                    var revenueRequest = new BudgetRequest
+                    {
+                        Date = DateTime.Now,
+                        Status = "New",
+                        OrganizationId = 1,
+                        RequestType = "Revenue Fund",
+                        RequestData = json
+                    };
+
+
+                    //submit request
+                    db.BudgetRequests.InsertOnSubmit(revenueRequest);
+
+                    try
+                    {
+                        //submit changes
+                        db.SubmitChanges();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                        db.SubmitChanges();
+                    }
+
+                    return Response.AsRedirect("/organization");
+                };
+            }
         }
     }
 }

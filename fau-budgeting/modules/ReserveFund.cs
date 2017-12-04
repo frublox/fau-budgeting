@@ -1,6 +1,10 @@
 ﻿using Nancy;
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 
 
 
@@ -8,8 +12,8 @@ namespace fau_budgeting
 {
     public class Reserve_Request
     {
-        public string smarttag { get; set; }
-        public string accountname { get; set; }
+        public string res_fund_supp_smarttag { get; set; }
+        public string res_fund_supp_account_name { get; set; }
         public string transferin1 { get; set; }
         public int transferin2 { get; set; }
         public string transferin3 { get; set; }
@@ -47,7 +51,7 @@ namespace fau_budgeting
 
                      
 
-            Get["/reserve-fund"] = _ => View["ReserveFund"];
+            Get["/reserve-fund"] = _ => View["/forms/ReserveFund"];
 
             Post["/reserve-fund-submit"] = _ =>
             {
@@ -56,7 +60,36 @@ namespace fau_budgeting
                 var json = new JavaScriptSerializer().Serialize(input);
                 //var jsonStr = JSON.stringify(jsonVar);
 
-                return View["ReserveFund"];
+                //connects to DB
+                string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+                BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+                //
+                var revenueRequest = new BudgetRequest
+                {
+                    Date = DateTime.Now,
+                    Status = "New",
+                    OrganizationId = 1,
+                    RequestType = "Reserve Fund",
+                    RequestData = json
+                };
+
+
+                //submit request
+                db.BudgetRequests.InsertOnSubmit(revenueRequest);
+
+                try
+                {
+                    //submit changes
+                    db.SubmitChanges();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    db.SubmitChanges();
+                }
+
+                return Response.AsRedirect("/organization");
             };
 
             
