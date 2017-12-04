@@ -798,8 +798,6 @@
         <!---Scroll to top-->
         <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
         <!---/. Scroll to top-->
-    </div>
-    <!-- /#wrapper -->
     
 
 @EndSection

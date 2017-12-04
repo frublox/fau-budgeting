@@ -299,7 +299,7 @@ namespace fau_budgeting
         public OperatingFund()
         {
 
-            Get["/operating-fund"] = _ => View["/forms/OperatingFund"];
+            Get["/operating-fund"] = _ => View["forms/OperatingFund"];
 
             Post["/operating-fund-submit"] = _ =>
             {
