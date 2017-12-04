@@ -1,6 +1,10 @@
 ﻿using Nancy;
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 
 
 
@@ -9,7 +13,11 @@ namespace fau_budgeting
     public class Operating_Request
     {
         public string smarttag { get; set; }
-        public string accountname { get; set; }
+        public string account_name { get; set; }
+        public bool radiobutton1 { get; set; }
+        public bool radiobutton2 { get; set; }
+        public bool radiobutton3 { get; set; }
+        public bool radiobutton4 { get; set; }
         public string title { get; set; }
         public string telephone { get; set; }
         public string email { get; set; }
@@ -284,12 +292,6 @@ namespace fau_budgeting
         public string transout_justification { get; set; }
 
 
-
-
-
-
-
-
     }
 
     public class OperatingFund : NancyModule
@@ -297,14 +299,44 @@ namespace fau_budgeting
         public OperatingFund()
         {
 
-            Get["/operating-fund"] = _ => View["OperatingFund"];
+            Get["/operating-fund"] = _ => View["/forms/OperatingFund"];
 
             Post["/operating-fund-submit"] = _ =>
             {
                 Operating_Request request = this.Bind<Operating_Request>();
                 var json = new JavaScriptSerializer().Serialize(request);
 
-                return View["OperatingFund"];
+                //connects to DB
+                string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+                BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+
+                //initialize fields of BudgetRequest instance
+                var operatingRequest = new BudgetRequest
+                {
+                    Date = DateTime.Now,
+                    Status = "New",
+                    OrganizationId = 1,
+                    RequestType = "Operating Fund",
+                    RequestData = json
+                };
+
+
+                //submit request
+                db.BudgetRequests.InsertOnSubmit(operatingRequest);
+
+                try
+                {
+                    //submit changes
+                    db.SubmitChanges();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    db.SubmitChanges();
+                }
+
+                return Response.AsRedirect("/organization");
+
             };
 
 
