@@ -11,13 +11,14 @@
                 $("input[name='" + key + "']").attr("value", value);
             });
         }
-    });   
+    });
 }
 
 function disableEditing() {
     $("input").each(function () {
         $(this).prop("readonly", true);
     });
+    $("button[type='submit']").hide();
 }
 
 function enableEditing() {

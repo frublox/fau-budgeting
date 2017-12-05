@@ -1,5 +1,5 @@
 ﻿<div class="row" name="commentsection" id="commentsection">
-    <form method="post">
+    <form id="budget-info-actions" method="post">
         <input hidden name="requestType" value="@Model.Request.RequestType" />
         <input hidden name="id" value="@Model.Request.Id" />
 
@@ -15,10 +15,9 @@
             <div id="feedback" class="collapse">
                 <h4>Comments:</h4>
 
-                <textarea type="t"
-                          name="comments"
+                <textarea name="comments"
                           rows="6" cols="60"
-                          form="form"
+                          form="budget-info-actions"
                           placeholder="Enter some feedback..."></textarea>
                 <br>
                 <input type="submit"

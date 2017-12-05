@@ -106,7 +106,10 @@
     <Content Include="content\dist\js\sb-admin-2.min.js" />
     <Content Include="content\images\FAU-logo-clr.png" />
     <Content Include="content\js\budget-info.js" />
+    <Content Include="content\js\calculations.js" />
     <Content Include="content\js\name.js" />
+    <Content Include="content\js\sb-admin-2.js" />
+    <Content Include="content\js\scroll-top.js" />
     <Content Include="content\vendor\bootstrap-social\bootstrap-social.css" />
     <Content Include="content\vendor\bootstrap\css\bootstrap.css" />
     <Content Include="content\vendor\bootstrap\css\bootstrap.min.css" />
@@ -182,6 +185,7 @@
     <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
+    <None Include="views\archive.sshtml" />
     <Content Include="views\budget-info\budget-info-actions.sshtml" />
     <Content Include="views\budget-info\budget-info-reserve.sshtml" />
     <Content Include="views\budget-info\budget-info-operating.sshtml" />
@@ -228,6 +232,7 @@
     <Compile Include="HtmlProps.cs" />
     <Compile Include="modules\AdminModule.cs" />
     <Compile Include="modules\ApiModule.cs" />
+    <Compile Include="modules\ArchiveModule.cs" />
     <Compile Include="modules\BudgetInfoModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="modules\EmailModule.cs" />
