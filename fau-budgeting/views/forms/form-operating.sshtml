@@ -198,21 +198,19 @@
                                                 </tr>
                                                 <tr>
                                                     <td width="25%">AMP-filled</td>
-                                                    <td width="25%">31.00%</td>
+                                                    <td width="25%" class="amp_filled">31.00%</td>
                                                     <td width="25%">AMP-unfilled</td>
-                                                    <td colspan="4">39.00%</td>
+                                                    <td colspan="4" class="amp_unfilled">31.00%</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="25%">SP-filled</td>
-                                                    <td width="25%">39.00%</td>
+                                                    <td width="25%" class="sp_filled">39.00%</td>
                                                     <td width="25%">SP-unfilled</td>
-                                                    <td colspan="4">39.00%</td>
+                                                    <td colspan="4" class="sp_unfilled">39.00%</td>
                                                 </tr>
-
                                                 <tr>
                                                     <td colspan="7"></td>
                                                 </tr>
-
                                                 <tr>
                                                     <td colspan="7" style="text-align: center" class="strong">2018-2019 Budget Request</td>
                                                 </tr>
@@ -233,7 +231,7 @@
                                                     <td width="25%"><input name="pnumber1" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle1" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte1" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate1" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate1" type = "text" class="form-control highlighted_input ann_rate_class_1"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled1" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -242,7 +240,7 @@
                                                     <td width="25%"><input name="pnumber2" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle2" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte2" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate2" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate2" type = "text" class="form-control highlighted_input ann_rate_class_1"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled2" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -251,7 +249,7 @@
                                                     <td width="25%"><input name="pnumber3" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle3" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte3" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate3" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate3" type = "text" class="form-control highlighted_input ann_rate_class_1"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled3" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -260,7 +258,7 @@
                                                     <td width="25%"><input name="pnumber4" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle4" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte4" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate4" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate4" type = "text" class="form-control highlighted_input ann_rate_class_1"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled4" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -269,7 +267,7 @@
                                                     <td width="25%"><input name="pnumber5" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle5" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte5" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate5" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate5" type = "text" class="form-control highlighted_input ann_rate_class_1"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled5" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -278,7 +276,7 @@
                                                     <td width="25%"><input name="pnumber6" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle6" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte6" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate6" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate6" type = "text" class="form-control highlighted_input ann_rate_class_1"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled6" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -287,7 +285,7 @@
                                                     <td width="25%"><input name="pnumber7" type="text" class="form-control input"></td>
                                                     <td width="25%">Possible Merit/State Increase</td>
                                                     <td width="25%"><input name="fte7" type="text" class="form-control input"></td>
-                                                    <td width="25%">0</td>
+                                                    <td width="25%" class="ann_rate_total_class_1">0</td>
                                                     <td width="25%" style="text-align: center"><input name="filled7" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -331,7 +329,7 @@
                                                     <td width="25%"><input name="pnumber8" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle7" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte8" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate7" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate7" type = "text" class="form-control highlighted_input ann_rate_class_2"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled8" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -340,7 +338,7 @@
                                                     <td width="25%"><input name="pnumber9" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle8" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte9" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate8" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate8" type = "text" class="form-control highlighted_input ann_rate_class_2"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled9" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -349,7 +347,7 @@
                                                     <td width="25%"><input name="pnumber10" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle9" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte10" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate9" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate9" type = "text" class="form-control highlighted_input ann_rate_class_2"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled10" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -358,7 +356,7 @@
                                                     <td width="25%"><input name="pnumber11" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle10" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte11" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate10" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate10" type = "text" class="form-control highlighted_input ann_rate_class_2"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled11" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -367,7 +365,7 @@
                                                     <td width="25%"><input name="pnumber12" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle11" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte12" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate11" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate11" type = "text" class="form-control highlighted_input ann_rate_class_2"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled12" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -376,7 +374,7 @@
                                                     <td width="25%"><input name="pnumber13" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="ptitle12" type="text" class="form-control highlighted_input"></td>
                                                     <td width="25%"><input name="fte13" type="text" class="form-control highlighted_input"></td>
-                                                    <td width="25%"><input name="annualrate12" type="text" class="form-control highlighted_input"></td>
+                                                    <td width="25%"><input name = "annualrate12" type = "text" class="form-control highlighted_input ann_rate_class_2"></td>
                                                     <td width="25%" style="text-align: center"><input name="filled13" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -385,7 +383,7 @@
                                                     <td width="25%"><input name="pnumber14" type="text" class="form-control input"></td>
                                                     <td width="25%">Possible Merit/State Increase</td>
                                                     <td width="25%"><input name="fte14" type="text" class="form-control input"></td>
-                                                    <td width="25%">0</td>
+                                                    <td width="25%" class="ann_rate_total_class_2">0</td>
                                                     <td width="25%" style="text-align: center"><input name="filled14" id="checkBox" type="checkbox"></td>
                                                     <td width="25%">0</td>
                                                     <td width="25%">$0</td>
@@ -412,7 +410,7 @@
 
                                                 <tr>
                                                     <td colspan="3"><span class="strong">Total Salary and Benefits</span> (This total carries to summary page): </td>
-                                                    <td colspan="4"><input name="totalsalaries" type="number" class="form-control highlighted_input" placeholder="$"></td>
+                                                    <td colspan="4"><input name = "totalsalaries" class="form-control highlighted_input total_salaries" placeholder ="$"></td>
                                                 </tr>
                                             </tbody>
                                             <!--/.tbody-->

@@ -19,6 +19,7 @@
 @EndSection
 
 @Section['Scripts']
+<script src="/js/calculations.js"></script>
 <script src="/js/budget-info.js"></script>
 <script>
     $("form").attr("onsubmit", "confirm()");
