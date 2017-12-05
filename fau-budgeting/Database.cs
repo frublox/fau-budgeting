@@ -11,9 +11,7 @@ namespace fau_budgeting
     {
         public static AdminDashboardData GetAdminDashboardData()
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            var db = GetDbContext();
 
             var queryUnreviewed =
                 from request in db.BudgetRequests
@@ -53,9 +51,7 @@ namespace fau_budgeting
 
         public static List<BudgetRequest> GetBudgetRequests(int organizationId)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            var db = GetDbContext();
 
             var query =
                 from request in db.BudgetRequests
@@ -67,9 +63,7 @@ namespace fau_budgeting
 
         public static User GetUser(string email)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            var db = GetDbContext();
 
             var query =
                 from user in db.Users
@@ -81,9 +75,7 @@ namespace fau_budgeting
 
         public static BudgetRequest GetBudgetRequest(int id)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            var db = GetDbContext();
 
             var query =
                 from request in db.BudgetRequests
@@ -95,9 +87,7 @@ namespace fau_budgeting
 
         public static void AcceptBudgetRequest(int id)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            var db = GetDbContext();
 
             var query =
                 from request in db.BudgetRequests
@@ -112,11 +102,26 @@ namespace fau_budgeting
             db.SubmitChanges();
         }
 
+        public static void ApproveBudgetRequest(int id)
+        {
+            BudgetingDbDataContext db = GetDbContext();
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            foreach (BudgetRequest request in query)
+            {
+                request.Status = "Approved";
+            }
+
+            db.SubmitChanges();
+        }
+
         public static void SendBackBudgetRequest(int id, string comments)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            BudgetingDbDataContext db = GetDbContext();
 
             var query =
                 from request in db.BudgetRequests
@@ -132,11 +137,16 @@ namespace fau_budgeting
             db.SubmitChanges();
         }
 
-        public static void ResubmitBudgetRequest(int id, string requestData)
+        private static BudgetingDbDataContext GetDbContext()
         {
             string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
 
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            return new BudgetingDbDataContext(connStr);
+        }
+
+        public static void ResubmitBudgetRequest(int id, string requestData)
+        {
+            var db = GetDbContext();
 
             var query =
                 from request in db.BudgetRequests
@@ -154,10 +164,8 @@ namespace fau_budgeting
 
         public static void CreateBudgetRequest(BudgetRequest budgetRequest)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+            var db = GetDbContext();
 
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
-            
             if (BudgetRequestExists(budgetRequest.Id))
             {
                 var query =
@@ -178,9 +186,7 @@ namespace fau_budgeting
 
         public static bool BudgetRequestExists(int id)
         {
-            string connStr = ConfigurationManager.ConnectionStrings[0].ConnectionString;
-
-            BudgetingDbDataContext db = new BudgetingDbDataContext(connStr);
+            var db = GetDbContext();
 
             var query =
                 from request in db.BudgetRequests
@@ -189,5 +195,7 @@ namespace fau_budgeting
 
             return query.ToList().Count > 0;
         }
+
+        
     }
 }

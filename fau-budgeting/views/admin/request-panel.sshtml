@@ -13,7 +13,7 @@
                 <br />
 
                 <span class="@Current.Html.Class">
-                    @Current.Status
+                    @Current.StatusText
                 </span>
                 <br />
 

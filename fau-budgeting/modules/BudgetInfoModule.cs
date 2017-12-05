@@ -129,6 +129,15 @@ namespace fau_budgeting
                 return Response.AsRedirect("/admin");
             };
 
+            Post["/approve"] = _ =>
+            {
+                var data = this.Bind<FormData>();
+
+                Database.ApproveBudgetRequest(data.Id);
+
+                return Response.AsRedirect("/admin");
+            };
+
             Post["/edit"] = _ =>
             {
                 var data = this.Bind<FormData>();

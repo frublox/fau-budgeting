@@ -28,7 +28,7 @@
                 </li>
 
                 <li>
-                    <a href="admin-archive.html"><i class="fa fa-archive fa-fw"></i> Archive</a>
+                    <a href="/archive"><i class="fa fa-archive fa-fw"></i> Archive</a>
                 </li>
               
                 <!--Spreadsheet-->

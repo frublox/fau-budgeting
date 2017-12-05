@@ -23,5 +23,20 @@ namespace fau_budgeting
                 }
             }
         }
+
+        public string StatusText
+        {
+            get
+            {
+                if (Status == "New")
+                {
+                    return "Pending";
+                }
+                else
+                {
+                    return Status;
+                }
+            }
+        }
     }
 }
