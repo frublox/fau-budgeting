@@ -10,12 +10,12 @@ a:hover {
 }
 
 .previous {
-    background-color: #C10435;
+    background-color: #C00;
     color: white;
 }
 
 .next {
-    background-color: #337ab7;
+    background-color: #C00;
     color: white;
 }
 #myBtn {
@@ -34,5 +34,5 @@ a:hover {
 }
 
 #myBtn:hover {
-    background-color: #C10435; /* Add a dark-grey background on hover */
+    background-color: #C00; /* Add a dark-grey background on hover */
 }
