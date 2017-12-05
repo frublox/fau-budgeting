@@ -59,15 +59,15 @@ Budget Request Info
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">TAG110011</td>
-                                                            <td class="form-control-static">$560</td>
+                                                            <td class="form-control-static">@Model.tagsin1</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">TAG220022</td>
-                                                            <td class="form-control-static">$780</td>
+                                                            <td class="form-control-static">@Model.tagsin2</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="form-control-static">TAG330033</td>
-                                                            <td class="form-control-static">$260</td>
+                                                            <td class="form-control-static">@Model.tagsin3</td>
                                                         </tr>
                                                         <tr>
                                                             <td width="50%">Total Transfer In</td>
@@ -196,16 +196,22 @@ Budget Request Info
                 </form>
                 <!-- /.Form 1-->
                 <!---Feedback Form-->
-                <form action="URL to form script" method="POST">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>Comments:</h4>
-                            <textarea name="comments" rows="6" cols="140"></textarea><br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>Comments:</h4>
+                        
+
+                        <form action="/accept-budget-request" method="post">
                             <input type="button" value="Accept">
+                        </form>
+                        
+                        <form action="/send-back-budget-request" method="post">
                             <input type="button" value="Provide Feedback">
-                        </div>
+                            <textarea name="comments" rows="6" cols="140"></textarea><br>
+                        </form>
+                        
                     </div>
-                </form>    
+                </div>
                 <!--/. Feedback Form--->
             </div>
             <!--/.container-fluid -->
