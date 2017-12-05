@@ -12,6 +12,10 @@
             });
         }
     });
+
+    if (id) {
+        $("input[name='requestId']").attr("value", id);
+    }
 }
 
 function disableEditing() {

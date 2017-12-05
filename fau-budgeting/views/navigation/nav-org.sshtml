@@ -68,7 +68,7 @@
                 <!---/. Supplemental Forms--->
                 <!---Archive---->
                 <li>
-                    <a href="organization-archive.html"><i class="fa fa-archive fa-fw"></i> Archive</a>
+                    <a href="/archive"><i class="fa fa-archive fa-fw"></i> Archive</a>
                 </li>
                 <!---/. Archive---->
                 <!---User Profile-->

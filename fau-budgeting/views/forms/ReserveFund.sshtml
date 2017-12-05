@@ -31,4 +31,6 @@
 </script>
 @EndSection
 
-
+@Section['Styles']
+<link href="/dist/css/fund.css" rel="stylesheet">
+@EndSection

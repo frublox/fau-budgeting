@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace fau_budgeting
+﻿namespace fau_budgeting
 {
     public class Operating_Request
     {
+        public int? RequestId;
+
         public string smarttag { get; set; }
         public string account_name { get; set; }
         public bool radiobutton1 { get; set; }
