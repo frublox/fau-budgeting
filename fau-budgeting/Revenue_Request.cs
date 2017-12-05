@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace fau_budgeting
+﻿namespace fau_budgeting
 {
     public class Revenue_Request
     {
+        public int? RequestId;
+
         public string rev_fund_smarttag { get; set; }
         public string rev_fund_account_name { get; set; }
         public string rev_fund_generating_event_1 { get; set; }

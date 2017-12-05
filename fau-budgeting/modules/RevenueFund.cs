@@ -2,9 +2,6 @@
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 
 
 
@@ -36,7 +33,7 @@ namespace fau_budgeting
                 //converts to a string
                 var json = new JavaScriptSerializer().Serialize(request);
                 
-                var revenueRequest = new BudgetRequest
+                var budgetRequest = new BudgetRequest
                 {
                     Date = DateTime.Now,
                     Status = "New",
@@ -45,7 +42,15 @@ namespace fau_budgeting
                     RequestData = json
                 };
 
-                Database.CreateBudgetRequest(revenueRequest);
+                if (request.RequestId != null)
+                {
+                    if (request.RequestId != null)
+                    {
+                        budgetRequest.Id = (int) request.RequestId;
+                    }
+                }
+
+                Database.CreateBudgetRequest(budgetRequest);
 
                 return Response.AsRedirect("/organization");
             };

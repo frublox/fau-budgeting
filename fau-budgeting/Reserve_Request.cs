@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace fau_budgeting
+﻿namespace fau_budgeting
 {
     public class Reserve_Request
     {
+        public int? RequestId;
+
         public string res_fund_supp_smarttag { get; set; }
         public string res_fund_supp_account_name { get; set; }
         public string transferin1 { get; set; }

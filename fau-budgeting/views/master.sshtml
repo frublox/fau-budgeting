@@ -20,6 +20,8 @@
 
     <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
 
+    <link href="/dist/css/navbuttons.css" rel="stylesheet">
+
     @Section['Styles']
 </head>
 <body>
@@ -41,7 +43,9 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <script src="/dist/js/sb-admin-2.js"></script>
+    <script src="/js/sb-admin-2.js"></script>
+
+    <script src="/js/scroll-top.js"></script>
 
     @Section['Scripts']
 </body>

@@ -2,9 +2,6 @@
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 
 
 
@@ -30,11 +27,11 @@ namespace fau_budgeting
 
             Post["/reserve-fund-submit"] = _ =>
             {
-                Reserve_Request input = this.Bind<Reserve_Request>();
+                Reserve_Request request = this.Bind<Reserve_Request>();
 
-                var json = new JavaScriptSerializer().Serialize(input);
+                var json = new JavaScriptSerializer().Serialize(request);
 
-                var revenueRequest = new BudgetRequest
+                var budgetRequest = new BudgetRequest
                 {
                     Date = DateTime.Now,
                     Status = "New",
@@ -43,7 +40,12 @@ namespace fau_budgeting
                     RequestData = json
                 };
 
-                Database.CreateBudgetRequest(revenueRequest);
+                if (request.RequestId != null)
+                {
+                    budgetRequest.Id = (int) request.RequestId;
+                }
+
+                Database.CreateBudgetRequest(budgetRequest);
 
                 return Response.AsRedirect("/organization");
             };

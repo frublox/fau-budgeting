@@ -2,9 +2,6 @@
 using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 
 
 
@@ -43,6 +40,11 @@ namespace fau_budgeting
                     RequestType = "Operating Fund",
                     RequestData = json
                 };
+
+                if (request.RequestId != null)
+                {
+                    budgetRequest.Id = (int) request.RequestId;
+                }
 
                 Database.CreateBudgetRequest(budgetRequest);
 
