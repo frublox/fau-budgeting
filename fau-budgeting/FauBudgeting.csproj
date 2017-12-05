@@ -102,8 +102,6 @@
     <Content Include="content\dist\css\sb-admin-2.css" />
     <Content Include="content\dist\css\sb-admin-2.min.css" />
     <Content Include="content\dist\css\style.css" />
-    <Content Include="content\dist\js\sb-admin-2.js" />
-    <Content Include="content\dist\js\sb-admin-2.min.js" />
     <Content Include="content\images\FAU-logo-clr.png" />
     <Content Include="content\js\budget-info.js" />
     <Content Include="content\js\calculations.js" />
@@ -196,7 +194,6 @@
     <Content Include="views\master-asab.sshtml" />
     <Content Include="views\forms\ReserveFund.sshtml" />
     <Content Include="views\forms\RevenueFund.sshtml" />
-    <Content Include="views\budgetinfo.sshtml" />
     <Content Include="BudgetingDb.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>BudgetingDb.designer.cs</LastGenOutput>
@@ -253,7 +250,6 @@
     <Content Include="views\test\email.sshtml" />
     <Content Include="views\test\name.sshtml" />
     <Content Include="views\test\test-master.sshtml" />
-    <Content Include="views\display.sshtml" />
     <Content Include="views\forms\OperatingFund.sshtml" />
     <Content Include="views\organization\organization.sshtml" />
   </ItemGroup>
