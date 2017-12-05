@@ -979,7 +979,7 @@
                                                         <tr>
                                                             <td colspan="4">
                                                                 <label>Justification:</label>
-                                                                <textarea name="salaries-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                                <textarea name="salaries_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                             </td>
                                                         </tr>
                                                         
@@ -995,7 +995,7 @@
                                                         <tr>
                                                             <td colspan="4">
                                                                 <label>Justification:</label>
-                                                                <textarea name = "ops-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                                <textarea name = "ops_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                             </td>
                                                         </tr>
                                                         
@@ -1011,7 +1011,7 @@
                                                         <tr>
                                                             <td colspan="4">
                                                                 <label>Justification:</label>
-                                                                <textarea name = "ops-ga-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                                <textarea name = "ops_ga_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                             </td>
                                                         </tr>
                                                         
@@ -1067,7 +1067,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea name = "support-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "support_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1080,7 +1080,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea name = "food-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "food_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1093,7 +1093,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea name = "programs-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "programs_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1106,7 +1106,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea name = "travel-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "travel_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1119,7 +1119,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea name = "other-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "other_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                         
                                                         <tr>
@@ -1132,7 +1132,7 @@
                                                             <td>$0</td>
                                                         </tr>
                                                         <td colspan="4">
-                                                            <textarea name = "transout-justification" class="form-control highlighted_input" rows="5"></textarea>
+                                                            <textarea name = "transout_justification" class="form-control highlighted_input" rows="5"></textarea>
                                                         </td>
                                                     </tbody> 
                                                 </table>

@@ -45,11 +45,11 @@
                                             <tbody>
                                                 <tr>
                                                     <td width="25%">SmartTag:</td>
-                                                    <td colspan="4"><input class="form-control highlighted_input" name="rev_fund_ops_smarttag" required></td>
+                                                    <td colspan="4"><input class="form-control highlighted_input" name="rev_fund_smarttag" required></td>
                                                 </tr>
                                                 <tr>
                                                     <td width="25%">Account Name:</td>
-                                                    <td colspan="4"><input class="form-control highlighted_input" name="rev_fund_ops_account_name" required></td>
+                                                    <td colspan="4"><input class="form-control highlighted_input" name="rev_fund_account_name" required></td>
                                                 </tr>
                                                 <tr>
                                                     <td width="25%">Fund:</td>
