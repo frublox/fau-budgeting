@@ -38,6 +38,35 @@ namespace fau_budgeting
         public string transferout5 { get; set; }
         public int transferout6 { get; set; }
 
+        public int res_fund_supp_transfers_in_approved { get; set; }
+        public int res_fund_supp_transfers_in_request { get; set; }
+        public int res_fund_supp_total_transfer_in_approved { get; set; }
+        public int res_fund_supp_total_transfer_in_request {get; set;}
+        public int res_fund_supp_expenses_approved { get; set; }
+        public int res_fund_supp_expenses_request { get; set; }
+        public int res_fund_supp_transfers_out_approved { get; set; }
+        public int res_fund_supp_transfers_out_request { get; set; }
+        public int res_fund_supp_overhead_approved { get; set; }
+        public int res_fund_supp_overhead_request { get; set; }
+        public int res_fund_supp_total_exp_approved { get; set; }
+        public int res_fund_supp_total_exp_request { get; set; }
+        public int res_fund_supp_transfer_in_requested { get; set; }
+        public string res_fund_supp_transfer_in_justification { get; set; }
+        public int res_fund_supp_equipment_budget { get; set; }
+        public int res_fund_supp_improvements_budget { get; set; }
+        public int res_fund_supp_contingencies_budget { get; set; }
+        public int res_fund_supp_other_budget { get; set; }
+        public int res_fund_supp_total_budget { get; set; }
+        public int res_fund_supp_equipment_requested { get; set; }
+        public string res_fund_supp_equipment_justification { get; set; }
+        public int res_fund_supp_improvements_requested { get; set; }
+        public string res_fund_supp_improvements_justification { get; set; }
+        public int res_fund_supp_contingencies_requested { get; set; }
+        public string res_fund_supp_contingencies_justification { get; set; }
+        public int res_fund_supp_other_requested { get; set; }
+        public string res_fund_supp_other_justification { get; set; }
+        public int res_fund_supp_transfer_out_requested { get; set; }
+        public string res_fund_supp_transfer_out_justification { get; set; }
 
     }
 

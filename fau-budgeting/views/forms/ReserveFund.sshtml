@@ -1,4 +1,4 @@
-﻿@Master['master.sshtml']
+﻿@Master['master-org.sshtml']
 
 @Section['Title']
 	Reserve Fund Request Form
@@ -11,7 +11,7 @@
         <!--MY CODE IS HERE-->
         <!-- Page Content -->
         <div id="page-wrapper">
-            <div class="row">
+            <div class="row">C:\Users\dannye20\source\repos\fau-budgeting\fau-budgeting\views\forms\ReserveFund.sshtml
                 <div class="col-lg-12">
                     <h1 class="page-header">Reserve Fund Request Form</h1>
                 </div>
@@ -451,14 +451,7 @@
 @EndSection
 
 @Section['Scripts']
-    <!--Confirmation Script--->
-    <script>
-    document.getElementById("form2").onsubmit=function(){confirmation()}
     
-    function confirmation() {
-            alert("Are you sure you want to submit this form?");
-    }
-    </script>
 
 	<!-- Custom Theme JavaScript -->
     <script src="../js/scroll-top.js"></script>
