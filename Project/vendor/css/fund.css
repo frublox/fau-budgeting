@@ -1,6 +1,6 @@
 /*used for the highlighted text inputs*/
 .highlighted_input {
-    background-color: rgba(0, 0, 255, 0.05); /*where 0.1 is opacity*/
+    background-color: rgba(195,200,205,0.1) /*where 0.1 is opacity*/
 }
 
 .nav-pills>li {
