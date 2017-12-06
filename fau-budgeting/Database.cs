@@ -163,20 +163,25 @@ namespace fau_budgeting
         {
             var db = GetDbContext();
 
-            if (BudgetRequestExists(budgetRequest.Id))
-            {
-                var query =
-                    from request in db.BudgetRequests
-                    where request.Id == budgetRequest.Id
-                    select request;
-
-                foreach (var request in query)
-                {
-                    db.BudgetRequests.DeleteOnSubmit(request);
-                }
-            }
-
             db.BudgetRequests.InsertOnSubmit(budgetRequest);
+
+            db.SubmitChanges();
+        }
+
+        public static void UpdateRequestData(int id, string requestData)
+        {
+            var db = GetDbContext();
+
+            var query =
+                from request in db.BudgetRequests
+                where request.Id == id
+                select request;
+
+            foreach (var request in query)
+            {
+                request.Status = "New";
+                request.RequestData = requestData;
+            }
 
             db.SubmitChanges();
         }

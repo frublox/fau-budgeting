@@ -43,10 +43,12 @@ namespace fau_budgeting
 
                 if (request.RequestId != null)
                 {
-                    budgetRequest.Id = (int) request.RequestId;
+                    Database.UpdateRequestData((int) request.RequestId, budgetRequest.RequestData);
                 }
-
-                Database.CreateBudgetRequest(budgetRequest);
+                else
+                {
+                    Database.CreateBudgetRequest(budgetRequest);
+                }
 
                 return Response.AsRedirect("/organization");
 
