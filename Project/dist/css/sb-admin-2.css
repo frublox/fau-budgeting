@@ -8,7 +8,7 @@ body {
 }
 #wrapper {
   width: 100%;
-  background-color: #036;
+    background-color: #036;
 }
 #page-wrapper {
   padding: 0 15px;
@@ -21,6 +21,7 @@ body {
     margin: 0 0 0 250px;
     padding: 0 30px;
     border-left: 1px solid #035;
+       
   }
 }
 .navbar-top-links {
@@ -28,9 +29,11 @@ body {
 }
 .navbar-top-links li {
   display: inline-block;
+    
 }
 .navbar-top-links li:last-child {
   margin-right: 15px;
+    
 }
 .navbar-top-links li a {
   padding: 15px;
@@ -67,10 +70,12 @@ body {
 .navbar-top-links .dropdown-user {
   right: 0;
   left: auto;
+    
 }
 .sidebar .sidebar-nav.navbar-collapse {
   padding-left: 0;
   padding-right: 0;
+    padding-top: 20;
 }
 .sidebar .sidebar-search {
   padding: 15px;
@@ -84,12 +89,14 @@ body {
 }
 .sidebar .arrow {
   float: right;
+    
 }
 .sidebar .fa.arrow:before {
   content: "\f104";
 }
 .sidebar .active > a > .fa.arrow:before {
   content: "\f107";
+    
 }
 .sidebar .nav-second-level li,
 .sidebar .nav-third-level li {
@@ -97,6 +104,7 @@ body {
 }
 .sidebar .nav-second-level li a {
   padding-left: 37px;
+    
 }
 .sidebar .nav-third-level li a {
   padding-left: 52px;
@@ -106,8 +114,8 @@ body {
     z-index: 1;
     position: absolute;
     width: 250px;
-    margin-top: 51px;
-    background-color: #036;
+    margin-top: 120px;
+      background-color: #036;
   }
   .navbar-top-links .dropdown-messages,
   .navbar-top-links .dropdown-tasks,
@@ -140,7 +148,10 @@ body {
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
 .btn-danger.btn-outline:hover {
-  color: white;
+    
+    background-color: #036;
+    
+  
 }
 .chat {
   margin: 0;
@@ -170,7 +181,7 @@ body {
   overflow-y: scroll;
 }
 .login-panel {
-  margin-top: 25%;
+  margin-top: 50%;
 }
 .flot-chart {
   display: block;
@@ -202,6 +213,7 @@ table.dataTable thead .sorting:after {
   float: right;
   font-family: fontawesome;
   color: rgba(50, 50, 50, 0.5);
+    
 }
 .btn-circle {
   width: 30px;
@@ -219,7 +231,8 @@ table.dataTable thead .sorting:after {
   border-radius: 25px;
   font-size: 18px;
   line-height: 1.33;
-  color: #036;
+    color: #036;
+    
 }
 .btn-circle.btn-xl {
   width: 70px;
@@ -438,27 +451,28 @@ table.dataTable thead .sorting:after {
 }
 
 .status-new {
-    color: blue;
+    color: #0EB700;
 }
 
 .status-approved {
-    color: green;
+    color: #087700;
 }
 
 .status-awaiting {
-    color: red;
+    color: #ED2700;
 }
 
 .status-progress {
-    color: yellowgreen;
+    color: #FF8E0E;
 }
 
 .request {
-    color: orangered;
+    color: #036;
 }
 .total-budget {
     font-size: 1.5em;
     text-align: center;
+   
 }
 
 .strong{
