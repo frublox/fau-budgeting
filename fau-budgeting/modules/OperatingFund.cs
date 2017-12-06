@@ -3,15 +3,12 @@ using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
 using System;
 
-
-
 namespace fau_budgeting
 {
     public class OperatingFund : NancyModule
     {
         public OperatingFund()
         {
-
             Get["/operating-fund"] = _ =>
             {
                 int? id = Request.Query["id"];
@@ -51,10 +48,7 @@ namespace fau_budgeting
                 }
 
                 return Response.AsRedirect("/organization");
-
             };
-
-
         }
     }
 

@@ -51,9 +51,6 @@ namespace fau_budgeting
 
                 return Response.AsRedirect("/organization");
             };
-
-            
-
         }
     }
 }

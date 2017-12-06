@@ -3,8 +3,6 @@ using Nancy.ModelBinding;
 using System.Web.Script.Serialization;
 using System;
 
-
-
 namespace fau_budgeting
 {
     public class RevenueFund : NancyModule
