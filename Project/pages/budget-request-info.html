@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Budget Request Info</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../vendor/css/navbuttons.css" rel="stylesheet">
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+   
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                  <a class="navbar-brand" href="admin.html"><img src="../images/FAU-logo-clr.png"></a> 
+            </div>
+            <!-- /.navbar-header -->
+            
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <!--Search Bar-->
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <!--/. Search Bar-->
+                        <li>
+                            <a href="admin.html"><i class="fa fa-dashboard fa-fw"></i> 
+                                <font color = "white">Dashboard</font>
+                                    </a>
+                        </li>
+                        <!--Archive-->
+                        <li>
+                            <a href="admin-archive.html"><i class="fa fa-archive fa-fw"></i> 
+                                <font color = "white">Archive</font>
+                                    </a>
+                        </li>
+                        <!--/.Archive--->
+                        <!--Spreadsheet-->
+                        <li>
+                            <a href="#spreadsheet"><i class="fa fa-download fa-fw"></i>
+                                <font color = "white">UBAC/CBAC Excel</font>
+                                    </a>
+                        </li>
+                        <!--/.Spreadsheet--->
+                        <!--User Profile-->
+                        <li>
+                            <a href="#userprofile.html"><i class="fa fa-user fa-fw"></i> 
+                                <font color = "white">User Profile </font>
+                                    <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="#settings.html"><i class="fa fa-gear fa-fw"></i> 
+                                    <font color = "white">Settings</font>
+                                        </a></li>
+                                <li class="divider"></li>
+                                <li><a href="admin-login.html"><i class="fa fa-sign-out fa-fw"></i> 
+                                    <font color = "white">Logout</font>
+                                        </a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!--/. User Profile-->
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- /. Navigation -->
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header" style="text-align: center">Sport Club Council</h2>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            
+            <div class="container-fluid">
+               <!-- Form 1-->
+               <form name="form1" id="form1" action="#../php/formdata.php" method="post" enctype="multipart/form-data">
+                   <fieldset disabled="disabled">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <p style="text-align: center;" class="strong">
+                                ACTIVITY AND SERVICE FEE BUDGET REQUEST FORM <br>
+                                RESERVE FUND SUMMARY AND DETAIL <br>
+                                FOR THE FISCAL YEAR ENDING June 30, 2019
+                            </p>
+                        </div>
+                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <!-- Place Tables Here -->
+                                            <div class="table-responsive">
+                                                <table class="table table-hover">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="25%">SmartTag:</td>
+                                                            <td class="form-control-static"> TAG001317</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="25%">Account Name:</td>
+                                                            <td class="form-control-static">Sport Club Council</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="25%">Fund:</td>
+                                                            <td colspan="3">Student Government Reserve</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td colspan="4"></td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td width="50%"><strong>TRANSFER IN</strong></td>
+                                                            <td width="50%"><strong>2018-2019 Request Budget</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="4">Transfers In from TAG(s):</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="form-control-static">TAG110011</td>
+                                                            <td class="form-control-static">$560</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="form-control-static">TAG220022</td>
+                                                            <td class="form-control-static">$780</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="form-control-static">TAG330033</td>
+                                                            <td class="form-control-static">$260</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%">Total Transfer In</td>
+                                                            <td width="50%">$1,600</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td colspan="4"></td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td width="50%"><strong>EXPENSES</strong>
+                                                            </td>
+                                                             <td width="50%"><strong>2018-2019 Request Budget</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%">Equipment</td>
+                                                            <td class="form-control-static">$750</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%">Improvements</td>
+                                                            <td class="form-control-static">$500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%">Contingencies</td>
+                                                            <td class="form-control-static">$420</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="form-control-static">Office Resource</td>
+                                                            <td class="form-control-static">$12,250</td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td class="form-control-static">Program</td>
+                                                            <td class="form-control-static">$10,000</td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td class="form-control-static">Services</td>
+                                                            <td class="form-control-static">$900</td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td class="form-control-static">Travel</td>
+                                                            <td class="form-control-static">$38,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%">Total Expenses</td>
+                                                            <td colspan="2" >$62,820</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td colspan="4"></td>
+                                                        </tr>
+                                                        
+                                                         <tr>
+                                                            <td width="50%"></td>
+                                                            <td colspan="2"><strong>2018-2019 Request Budget</strong></td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td width="50%">2.8% Overhead</td>
+                                                            <td colspan="2">$1,484</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td colspan="4"></td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="50%"><strong>TRANSFER OUT</strong></td>
+                                                            <td width="50%"><strong>2018-2019 Request Budget</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="4">Transfers Out To TAG(s):</td>
+                                                        </tr>
+                                                          <tr>
+                                                            <td class="form-control-static">TAG110011</td>
+                                                            <td class="form-control-static">$600</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="form-control-static">TAG220022</td>
+                                                            <td class="form-control-static">$800</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="form-control-static">TAG330033</td>
+                                                            <td class="form-control-static">$300</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50%">Total Transfer Out</td>
+                                                            <td width="50%">$1,700</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="4"></td>
+                                                        </tr>
+                                                        
+                                                         <tr>
+                                                            <td width="50%"></td>
+                                                            <td colspan="2"><strong>2018-2019 Request Budget</strong></td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td width="50%">Net Inflows/(Outflows)</td>
+                                                            <td colspan="2" >$64,204</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td colspan="4"></td>
+                                                        </tr>
+                                                        
+                                                        <tr class="form-group">
+                                                            <td colspan="4">
+                                                            <label>Please provide detailed supplemental schedules in support of the expenses</label><br>No file chosen
+                                                            </td>    
+                                                        </tr>
+                                                        <tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- End Table Placement -->
+                                            <!-- /.table-responsive -->
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel-default -->     
+                       </fieldset>
+                    <!--/. fieldset-->
+                </form>
+                <!-- /.Form 1-->
+                
+                <div class="row" name="commentsection" id="commentsection">
+                    <!---Feedback Form-->
+                    <form action="URL to form script" method="POST">
+                        <div class="col-md-3">
+                            <a href="#feedback" class="btn btn-info" data-toggle="collapse">Needs Feedback</a>
+                            <form onsubmit="return confirm('Are you sure you want to send this form?');" action="URL to form script" method="POST">    
+                            <input type="button" class="btn btn-success" name = "accept" value="Accept">
+                            </form>
+                                <div id="feedback" class="collapse">
+                                    <h4>Comments:</h4> <textarea name="comments" rows="6" cols="60"></textarea><br>
+                                    <input type="button" class="btn btn-info" name="send" value="Send">   
+                                </div>    
+                        </div>   
+                    </form>    
+                    <!--/. Feedback Form--->
+                </div>
+                
+            </div>
+            <!--/.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+        
+        <!---Scroll to top-->
+        <button onclick="topFunction()" id="myBtn" title="Return to top"><i class="fa fa-arrow-up"></i></button>
+        <!---/. Scroll to top-->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!--Confirmation Script--->
+    <script>
+    document.getElementById("commentsection").onsubmit=function(){validate()}
+    
+    function confirmation() {
+            alert("Are you sure you want to send feedback?");
+    }
+    </script>
+    
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/scroll-top.js"></script>
+    <script src="../dist/js/sb-admin-2.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../dist/js/budget-total.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{887A8565-4A10-44C8-82EF-F2F2D1D2BFBF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>fau_budgeting</RootNamespace>
+    <AssemblyName>fau-budgeting</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Nancy, Version=1.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.1.4.4\lib\net40\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Aspnet, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Linker, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.Linker.0.3.1\lib\net40-Client\Nancy.Linker.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\dist\css\sb-admin-2.css" />
+    <Content Include="content\dist\css\sb-admin-2.min.css" />
+    <Content Include="content\dist\css\style.css" />
+    <Content Include="content\images\FAU-logo-clr.png" />
+    <Content Include="content\js\budget-info.js" />
+    <Content Include="content\js\calculations.js" />
+    <Content Include="content\js\name.js" />
+    <Content Include="content\js\sb-admin-2.js" />
+    <Content Include="content\js\scroll-top.js" />
+    <Content Include="content\vendor\bootstrap-social\bootstrap-social.css" />
+    <Content Include="content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="content\vendor\css\fund.css" />
+    <Content Include="content\vendor\css\navbuttons.css" />
+    <Content Include="content\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="content\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="content\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="content\vendor\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="content\vendor\jquery\jquery.js" />
+    <Content Include="content\vendor\jquery\jquery.min.js" />
+    <Content Include="content\vendor\metisMenu\metisMenu.css" />
+    <Content Include="content\vendor\metisMenu\metisMenu.js" />
+    <Content Include="content\vendor\metisMenu\metisMenu.min.css" />
+    <Content Include="content\vendor\metisMenu\metisMenu.min.js" />
+    <Content Include="content\vendor\morrisjs\morris.css" />
+    <Content Include="content\vendor\morrisjs\morris.js" />
+    <Content Include="content\vendor\morrisjs\morris.min.js" />
+    <Content Include="content\vendor\raphael\raphael.js" />
+    <Content Include="content\vendor\raphael\raphael.min.js" />
+    <Content Include="icon.png" />
+    <Content Include="views\admin\admin.sshtml" />
+    <Content Include="views\admin\request-panel.sshtml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="content\less\mixins.less" />
+    <Content Include="content\less\sb-admin-2.less" />
+    <Content Include="content\less\variables.less" />
+    <Content Include="content\vendor\bootstrap-social\bootstrap-social.less" />
+    <Content Include="content\vendor\bootstrap-social\bootstrap-social.scss" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="content\vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="content\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="content\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="content\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="content\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="content\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="content\vendor\font-awesome\less\animated.less" />
+    <Content Include="content\vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="content\vendor\font-awesome\less\core.less" />
+    <Content Include="content\vendor\font-awesome\less\extras.less" />
+    <Content Include="content\vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="content\vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="content\vendor\font-awesome\less\icons.less" />
+    <Content Include="content\vendor\font-awesome\less\larger.less" />
+    <Content Include="content\vendor\font-awesome\less\list.less" />
+    <Content Include="content\vendor\font-awesome\less\mixins.less" />
+    <Content Include="content\vendor\font-awesome\less\path.less" />
+    <Content Include="content\vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="content\vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="content\vendor\font-awesome\less\spinning.less" />
+    <Content Include="content\vendor\font-awesome\less\stacked.less" />
+    <Content Include="content\vendor\font-awesome\less\variables.less" />
+    <Content Include="content\vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_core.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_extras.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_list.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_path.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_spinning.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="content\vendor\font-awesome\scss\_variables.scss" />
+    <None Include="views\archive.sshtml" />
+    <Content Include="views\budget-info\budget-info-actions.sshtml" />
+    <Content Include="views\budget-info\budget-info-reserve.sshtml" />
+    <Content Include="views\budget-info\budget-info-operating.sshtml" />
+    <None Include="views\budget-info\budget-info-revenue.sshtml" />
+    <Content Include="views\forms\form-operating.sshtml" />
+    <None Include="views\forms\form-reserve.sshtml" />
+    <Content Include="views\master-org.sshtml" />
+    <Content Include="views\master-asab.sshtml" />
+    <Content Include="views\forms\ReserveFund.sshtml" />
+    <Content Include="views\forms\RevenueFund.sshtml" />
+    <Content Include="BudgetingDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BudgetingDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="BudgetingDb.dbml.layout">
+      <DependentUpon>BudgetingDb.dbml</DependentUpon>
+    </None>
+    <Content Include="views\login.sshtml" />
+    <Content Include="views\forms\form-revenue.sshtml" />
+    <None Include="views\navigation\nav-asab.sshtml" />
+    <None Include="views\navigation\nav-org.sshtml" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboardData.cs" />
+    <Compile Include="BudgetingDb.cs">
+      <DependentUpon>BudgetingDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetingDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgetingDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetRequest.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="HtmlProps.cs" />
+    <Compile Include="modules\AdminModule.cs" />
+    <Compile Include="modules\ApiModule.cs" />
+    <Compile Include="modules\ArchiveModule.cs" />
+    <Compile Include="modules\BudgetInfoModule.cs" />
+    <Compile Include="CustomBootstrapper.cs" />
+    <Compile Include="modules\EmailModule.cs" />
+    <Compile Include="modules\LoginModule.cs" />
+    <Compile Include="modules\OperatingFund.cs" />
+    <Compile Include="modules\OrganizationModule.cs" />
+    <Compile Include="Operating_Request.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="modules\ReserveFund.cs" />
+    <Compile Include="modules\RevenueFund.cs" />
+    <Compile Include="Reserve_Request.cs" />
+    <Compile Include="Revenue_Request.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="views\master.sshtml" />
+    <Content Include="views\test\data.sshtml" />
+    <Content Include="views\test\email.sshtml" />
+    <Content Include="views\test\name.sshtml" />
+    <Content Include="views\test\test-master.sshtml" />
+    <Content Include="views\forms\OperatingFund.sshtml" />
+    <Content Include="views\organization\organization.sshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61220</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61220/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\NETStandard.Library.2.0.1\build\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.1\build\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.1\build\NETStandard.Library.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

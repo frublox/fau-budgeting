@@ -1,0 +1,10 @@
+﻿@Master['test-master.sshtml']
+
+@Section['Content']
+    <h1>Data</h1>
+    <ol>
+        @Each
+            <li>@Current</li>
+        @EndEach
+    </ol>
+@EndSection

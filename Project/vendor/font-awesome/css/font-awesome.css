@@ -1290,6 +1290,7 @@
 }
 .fa-archive:before {
   content: "\f187";
+    background-color: white;
 }
 .fa-bug:before {
   content: "\f188";

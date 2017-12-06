@@ -1,0 +1,26 @@
+/*used for the highlighted text inputs*/
+.highlighted_input {
+    background-color: rgba(0, 0, 255, 0.05); /*where 0.1 is opacity*/
+}
+
+.nav-pills>li {
+    /*float:right;*/
+    padding-bottom: 10px;
+}
+
+.hidden {
+    display:none;
+}
+
+.submit{
+    text-align: right; 
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.strong{
+    font-weight: bold;
+}
+
+.em{
+    font-style: italic;
+}

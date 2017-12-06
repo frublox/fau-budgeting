@@ -1,0 +1,65 @@
+﻿@Master['master-asab']
+
+@Section['Title']
+    ASAB - Dashboard
+@EndSection
+
+@Section['Content']
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Dashboard</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <p class="total-budget">
+                Total Approved Budget: $@Model.ApprovedBudget
+            </p>
+
+            <!-- Unreviewed Requests Panel-->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Unreviewed
+                    </div>
+
+                    @Partial['request-panel', Model.Unreviewed];
+                </div>
+            </div>
+
+            <!-- Reviewed requests Panel-->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Awaiting Resubmission
+                    </div>
+
+                    @Partial['request-panel', Model.Reviewed];
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Accepted
+                    </div>
+
+                    @Partial['request-panel', Model.Accepted];
+                </div>
+            </div>
+
+            <!-- Approved Request Panel-->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bell fa-fw"></i> Approved
+                    </div>
+                    
+                    @Partial['request-panel', Model.Approved];
+                </div>
+            </div>
+        </div>
+    </div>
+@EndSection

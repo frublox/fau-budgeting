@@ -1,0 +1,17 @@
+﻿@Master['master']
+
+@Section['Navigation']
+    @Partial['navigation/nav-asab'];
+@EndSection
+
+@Section['Content']
+    @Section['Content']
+@EndSection
+
+@Section['Scripts']
+    @Section['Scripts']
+@EndSection
+
+@Section['Styles']
+    @Section['Styles']
+@EndSection
