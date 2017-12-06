@@ -12,6 +12,7 @@
         public bool radiobutton4 { get; set; }
         public string title { get; set; }
         public string telephone { get; set; }
+        public string signature { get; set; }
         public string email { get; set; }
         public int salaries { get; set; }
         public int services { get; set; }
